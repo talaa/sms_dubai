@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		692FA38D15CD8E65008D5421 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692FA38C15CD8E65008D5421 /* UIKit.framework */; };
+		692FA38F15CD8E65008D5421 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692FA38E15CD8E65008D5421 /* Foundation.framework */; };
+		692FA39115CD8E65008D5421 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692FA39015CD8E65008D5421 /* CoreGraphics.framework */; };
+		692FA39715CD8E65008D5421 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 692FA39515CD8E65008D5421 /* InfoPlist.strings */; };
+		692FA39915CD8E65008D5421 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FA39815CD8E65008D5421 /* main.m */; };
+		692FA39D15CD8E65008D5421 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FA39C15CD8E65008D5421 /* AppDelegate.m */; };
+		692FA3A015CD8E65008D5421 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692FA39E15CD8E65008D5421 /* MainStoryboard.storyboard */; };
+		692FA3A315CD8E65008D5421 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FA3A215CD8E65008D5421 /* FirstViewController.m */; };
+		692FA3A515CD8E65008D5421 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3A415CD8E65008D5421 /* first.png */; };
+		692FA3A715CD8E66008D5421 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3A615CD8E66008D5421 /* first@2x.png */; };
+		692FA3AA15CD8E66008D5421 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FA3A915CD8E66008D5421 /* SecondViewController.m */; };
+		692FA3AC15CD8E66008D5421 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3AB15CD8E66008D5421 /* second.png */; };
+		692FA3AE15CD8E66008D5421 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3AD15CD8E66008D5421 /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		692FA38815CD8E65008D5421 /* SMS Dubai Roads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Dubai Roads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		692FA38C15CD8E65008D5421 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		692FA38E15CD8E65008D5421 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		692FA39015CD8E65008D5421 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		692FA39415CD8E65008D5421 /* SMS Dubai Roads-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SMS Dubai Roads-Info.plist"; sourceTree = "<group>"; };
+		692FA39615CD8E65008D5421 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		692FA39815CD8E65008D5421 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		692FA39A15CD8E65008D5421 /* SMS Dubai Roads-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMS Dubai Roads-Prefix.pch"; sourceTree = "<group>"; };
+		692FA39B15CD8E65008D5421 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		692FA39C15CD8E65008D5421 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		692FA39F15CD8E65008D5421 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		692FA3A115CD8E65008D5421 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		692FA3A215CD8E65008D5421 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		692FA3A415CD8E65008D5421 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		692FA3A615CD8E66008D5421 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		692FA3A815CD8E66008D5421 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		692FA3A915CD8E66008D5421 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		692FA3AB15CD8E66008D5421 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		692FA3AD15CD8E66008D5421 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		692FA38515CD8E65008D5421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692FA38D15CD8E65008D5421 /* UIKit.framework in Frameworks */,
+				692FA38F15CD8E65008D5421 /* Foundation.framework in Frameworks */,
+				692FA39115CD8E65008D5421 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		692FA37D15CD8E65008D5421 = {
+			isa = PBXGroup;
+			children = (
+				692FA39215CD8E65008D5421 /* SMS Dubai Roads */,
+				692FA38B15CD8E65008D5421 /* Frameworks */,
+				692FA38915CD8E65008D5421 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		692FA38915CD8E65008D5421 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				692FA38815CD8E65008D5421 /* SMS Dubai Roads.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		692FA38B15CD8E65008D5421 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				692FA38C15CD8E65008D5421 /* UIKit.framework */,
+				692FA38E15CD8E65008D5421 /* Foundation.framework */,
+				692FA39015CD8E65008D5421 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		692FA39215CD8E65008D5421 /* SMS Dubai Roads */ = {
+			isa = PBXGroup;
+			children = (
+				692FA39B15CD8E65008D5421 /* AppDelegate.h */,
+				692FA39C15CD8E65008D5421 /* AppDelegate.m */,
+				692FA39E15CD8E65008D5421 /* MainStoryboard.storyboard */,
+				692FA3A115CD8E65008D5421 /* FirstViewController.h */,
+				692FA3A215CD8E65008D5421 /* FirstViewController.m */,
+				692FA3A415CD8E65008D5421 /* first.png */,
+				692FA3A615CD8E66008D5421 /* first@2x.png */,
+				692FA3A815CD8E66008D5421 /* SecondViewController.h */,
+				692FA3A915CD8E66008D5421 /* SecondViewController.m */,
+				692FA3AB15CD8E66008D5421 /* second.png */,
+				692FA3AD15CD8E66008D5421 /* second@2x.png */,
+				692FA39315CD8E65008D5421 /* Supporting Files */,
+			);
+			path = "SMS Dubai Roads";
+			sourceTree = "<group>";
+		};
+		692FA39315CD8E65008D5421 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				692FA39415CD8E65008D5421 /* SMS Dubai Roads-Info.plist */,
+				692FA39515CD8E65008D5421 /* InfoPlist.strings */,
+				692FA39815CD8E65008D5421 /* main.m */,
+				692FA39A15CD8E65008D5421 /* SMS Dubai Roads-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		692FA38715CD8E65008D5421 /* SMS Dubai Roads */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 692FA3B115CD8E66008D5421 /* Build configuration list for PBXNativeTarget "SMS Dubai Roads" */;
+			buildPhases = (
+				692FA38415CD8E65008D5421 /* Sources */,
+				692FA38515CD8E65008D5421 /* Frameworks */,
+				692FA38615CD8E65008D5421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SMS Dubai Roads";
+			productName = "SMS Dubai Roads";
+			productReference = 692FA38815CD8E65008D5421 /* SMS Dubai Roads.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		692FA37F15CD8E65008D5421 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Tamer Alaa";
+			};
+			buildConfigurationList = 692FA38215CD8E65008D5421 /* Build configuration list for PBXProject "SMS Dubai Roads" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 692FA37D15CD8E65008D5421;
+			productRefGroup = 692FA38915CD8E65008D5421 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				692FA38715CD8E65008D5421 /* SMS Dubai Roads */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		692FA38615CD8E65008D5421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692FA39715CD8E65008D5421 /* InfoPlist.strings in Resources */,
+				692FA3A015CD8E65008D5421 /* MainStoryboard.storyboard in Resources */,
+				692FA3A515CD8E65008D5421 /* first.png in Resources */,
+				692FA3A715CD8E66008D5421 /* first@2x.png in Resources */,
+				692FA3AC15CD8E66008D5421 /* second.png in Resources */,
+				692FA3AE15CD8E66008D5421 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		692FA38415CD8E65008D5421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692FA39915CD8E65008D5421 /* main.m in Sources */,
+				692FA39D15CD8E65008D5421 /* AppDelegate.m in Sources */,
+				692FA3A315CD8E65008D5421 /* FirstViewController.m in Sources */,
+				692FA3AA15CD8E66008D5421 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		692FA39515CD8E65008D5421 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				692FA39615CD8E65008D5421 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		692FA39E15CD8E65008D5421 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				692FA39F15CD8E65008D5421 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		692FA3AF15CD8E66008D5421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		692FA3B015CD8E66008D5421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		692FA3B215CD8E66008D5421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
+				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		692FA3B315CD8E66008D5421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
+				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		692FA38215CD8E65008D5421 /* Build configuration list for PBXProject "SMS Dubai Roads" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				692FA3AF15CD8E66008D5421 /* Debug */,
+				692FA3B015CD8E66008D5421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		692FA3B115CD8E66008D5421 /* Build configuration list for PBXNativeTarget "SMS Dubai Roads" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				692FA3B215CD8E66008D5421 /* Debug */,
+				692FA3B315CD8E66008D5421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 692FA37F15CD8E65008D5421 /* Project object */;
+}
