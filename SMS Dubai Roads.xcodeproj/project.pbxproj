@@ -15,11 +15,25 @@
 		692FA39D15CD8E65008D5421 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FA39C15CD8E65008D5421 /* AppDelegate.m */; };
 		692FA3A015CD8E65008D5421 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692FA39E15CD8E65008D5421 /* MainStoryboard.storyboard */; };
 		692FA3A315CD8E65008D5421 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FA3A215CD8E65008D5421 /* FirstViewController.m */; };
-		692FA3A515CD8E65008D5421 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3A415CD8E65008D5421 /* first.png */; };
-		692FA3A715CD8E66008D5421 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3A615CD8E66008D5421 /* first@2x.png */; };
-		692FA3AA15CD8E66008D5421 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FA3A915CD8E66008D5421 /* SecondViewController.m */; };
-		692FA3AC15CD8E66008D5421 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3AB15CD8E66008D5421 /* second.png */; };
-		692FA3AE15CD8E66008D5421 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3AD15CD8E66008D5421 /* second@2x.png */; };
+		692FA3B615CD95AC008D5421 /* SalikViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FA3B515CD95AC008D5421 /* SalikViewController.m */; };
+		692FA3B915CD95C1008D5421 /* DubaiParkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FA3B815CD95C1008D5421 /* DubaiParkingViewController.m */; };
+		692FA3BC15CD95E2008D5421 /* DefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FA3BB15CD95E2008D5421 /* DefaultsViewController.m */; };
+		692FA3C215CDA13C008D5421 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3C115CDA13C008D5421 /* Settings.bundle */; };
+		692FA3C415CDAE31008D5421 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692FA3C315CDAE31008D5421 /* MessageUI.framework */; };
+		692FA3C615CDB8C3008D5421 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3C515CDB8C3008D5421 /* Icon.png */; };
+		698B05C615FD266500A8E34C /* sendsmsbutton-263x37.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05C515FD266500A8E34C /* sendsmsbutton-263x37.png */; };
+		698B05C915FD267B00A8E34C /* salikbigbutton-180x83.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05C815FD267B00A8E34C /* salikbigbutton-180x83.png */; };
+		698B05CB15FD269E00A8E34C /* save button-72x37.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05CA15FD269E00A8E34C /* save button-72x37.png */; };
+		698B05CD15FD380700A8E34C /* icon_information.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05CC15FD380700A8E34C /* icon_information.png */; };
+		698B05D015FD428B00A8E34C /* IconsLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05CF15FD428B00A8E34C /* IconsLarge.png */; };
+		698B05D715FD47F500A8E34C /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698B05D515FD47F500A8E34C /* libFlurryAnalytics.a */; };
+		698B05D915FD499600A8E34C /* ProjectApiKey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 698B05D815FD499600A8E34C /* ProjectApiKey.txt */; };
+		698B05DB15FD552300A8E34C /* navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05DA15FD552300A8E34C /* navbar.png */; };
+		698B05DF15FD58D200A8E34C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05DE15FD58D200A8E34C /* back.png */; };
+		69A3C69C15FA8ECD00CABD7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C69B15FA8ECD00CABD7B /* Default@2x.png */; };
+		69A3C69F15FA8EF900CABD7B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C69E15FA8EF900CABD7B /* Default.png */; };
+		69A3C6A215FA91CE00CABD7B /* icon_mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C6A015FA91CE00CABD7B /* icon_mail.png */; };
+		69A3C6A315FA91CE00CABD7B /* icon_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C6A115FA91CE00CABD7B /* icon_settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,12 +50,29 @@
 		692FA39F15CD8E65008D5421 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		692FA3A115CD8E65008D5421 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		692FA3A215CD8E65008D5421 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		692FA3A415CD8E65008D5421 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		692FA3A615CD8E66008D5421 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		692FA3A815CD8E66008D5421 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		692FA3A915CD8E66008D5421 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		692FA3AB15CD8E66008D5421 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		692FA3AD15CD8E66008D5421 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		692FA3B415CD95AC008D5421 /* SalikViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalikViewController.h; sourceTree = "<group>"; };
+		692FA3B515CD95AC008D5421 /* SalikViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalikViewController.m; sourceTree = "<group>"; };
+		692FA3B715CD95C1008D5421 /* DubaiParkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DubaiParkingViewController.h; sourceTree = "<group>"; };
+		692FA3B815CD95C1008D5421 /* DubaiParkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DubaiParkingViewController.m; sourceTree = "<group>"; };
+		692FA3BA15CD95E2008D5421 /* DefaultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultsViewController.h; sourceTree = "<group>"; };
+		692FA3BB15CD95E2008D5421 /* DefaultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultsViewController.m; sourceTree = "<group>"; };
+		692FA3C115CDA13C008D5421 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
+		692FA3C315CDAE31008D5421 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		692FA3C515CDB8C3008D5421 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		698B05C515FD266500A8E34C /* sendsmsbutton-263x37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sendsmsbutton-263x37.png"; sourceTree = "<group>"; };
+		698B05C815FD267B00A8E34C /* salikbigbutton-180x83.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "salikbigbutton-180x83.png"; sourceTree = "<group>"; };
+		698B05CA15FD269E00A8E34C /* save button-72x37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save button-72x37.png"; sourceTree = "<group>"; };
+		698B05CC15FD380700A8E34C /* icon_information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_information.png; sourceTree = "<group>"; };
+		698B05CF15FD428B00A8E34C /* IconsLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconsLarge.png; sourceTree = "<group>"; };
+		698B05D415FD47F500A8E34C /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
+		698B05D515FD47F500A8E34C /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
+		698B05D815FD499600A8E34C /* ProjectApiKey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProjectApiKey.txt; sourceTree = "<group>"; };
+		698B05DA15FD552300A8E34C /* navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbar.png; sourceTree = "<group>"; };
+		698B05DE15FD58D200A8E34C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		69A3C69B15FA8ECD00CABD7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		69A3C69E15FA8EF900CABD7B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		69A3C6A015FA91CE00CABD7B /* icon_mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_mail.png; sourceTree = "<group>"; };
+		69A3C6A115FA91CE00CABD7B /* icon_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,9 +80,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				692FA3C415CDAE31008D5421 /* MessageUI.framework in Frameworks */,
 				692FA38D15CD8E65008D5421 /* UIKit.framework in Frameworks */,
 				692FA38F15CD8E65008D5421 /* Foundation.framework in Frameworks */,
 				692FA39115CD8E65008D5421 /* CoreGraphics.framework in Frameworks */,
+				698B05D715FD47F500A8E34C /* libFlurryAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,8 @@
 		692FA37D15CD8E65008D5421 = {
 			isa = PBXGroup;
 			children = (
+				698B05D115FD43C800A8E34C /* Flurry */,
+				698B05CE15FD41E600A8E34C /* Images */,
 				692FA39215CD8E65008D5421 /* SMS Dubai Roads */,
 				692FA38B15CD8E65008D5421 /* Frameworks */,
 				692FA38915CD8E65008D5421 /* Products */,
@@ -78,6 +113,7 @@
 		692FA38B15CD8E65008D5421 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				692FA3C315CDAE31008D5421 /* MessageUI.framework */,
 				692FA38C15CD8E65008D5421 /* UIKit.framework */,
 				692FA38E15CD8E65008D5421 /* Foundation.framework */,
 				692FA39015CD8E65008D5421 /* CoreGraphics.framework */,
@@ -88,17 +124,17 @@
 		692FA39215CD8E65008D5421 /* SMS Dubai Roads */ = {
 			isa = PBXGroup;
 			children = (
+				692FA3B415CD95AC008D5421 /* SalikViewController.h */,
+				692FA3B515CD95AC008D5421 /* SalikViewController.m */,
+				692FA3B715CD95C1008D5421 /* DubaiParkingViewController.h */,
+				692FA3B815CD95C1008D5421 /* DubaiParkingViewController.m */,
+				692FA3BA15CD95E2008D5421 /* DefaultsViewController.h */,
+				692FA3BB15CD95E2008D5421 /* DefaultsViewController.m */,
 				692FA39B15CD8E65008D5421 /* AppDelegate.h */,
 				692FA39C15CD8E65008D5421 /* AppDelegate.m */,
 				692FA39E15CD8E65008D5421 /* MainStoryboard.storyboard */,
 				692FA3A115CD8E65008D5421 /* FirstViewController.h */,
 				692FA3A215CD8E65008D5421 /* FirstViewController.m */,
-				692FA3A415CD8E65008D5421 /* first.png */,
-				692FA3A615CD8E66008D5421 /* first@2x.png */,
-				692FA3A815CD8E66008D5421 /* SecondViewController.h */,
-				692FA3A915CD8E66008D5421 /* SecondViewController.m */,
-				692FA3AB15CD8E66008D5421 /* second.png */,
-				692FA3AD15CD8E66008D5421 /* second@2x.png */,
 				692FA39315CD8E65008D5421 /* Supporting Files */,
 			);
 			path = "SMS Dubai Roads";
@@ -107,12 +143,50 @@
 		692FA39315CD8E65008D5421 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				692FA3C115CDA13C008D5421 /* Settings.bundle */,
 				692FA39415CD8E65008D5421 /* SMS Dubai Roads-Info.plist */,
 				692FA39515CD8E65008D5421 /* InfoPlist.strings */,
 				692FA39815CD8E65008D5421 /* main.m */,
 				692FA39A15CD8E65008D5421 /* SMS Dubai Roads-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		698B05CE15FD41E600A8E34C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				698B05DE15FD58D200A8E34C /* back.png */,
+				698B05DA15FD552300A8E34C /* navbar.png */,
+				698B05CF15FD428B00A8E34C /* IconsLarge.png */,
+				692FA3C515CDB8C3008D5421 /* Icon.png */,
+				698B05CA15FD269E00A8E34C /* save button-72x37.png */,
+				698B05C815FD267B00A8E34C /* salikbigbutton-180x83.png */,
+				698B05C515FD266500A8E34C /* sendsmsbutton-263x37.png */,
+				69A3C6A015FA91CE00CABD7B /* icon_mail.png */,
+				69A3C6A115FA91CE00CABD7B /* icon_settings.png */,
+				69A3C69B15FA8ECD00CABD7B /* Default@2x.png */,
+				69A3C69E15FA8EF900CABD7B /* Default.png */,
+				698B05CC15FD380700A8E34C /* icon_information.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		698B05D115FD43C800A8E34C /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				698B05D315FD47F500A8E34C /* FlurryAnalytics */,
+			);
+			name = Flurry;
+			sourceTree = "<group>";
+		};
+		698B05D315FD47F500A8E34C /* FlurryAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				698B05D815FD499600A8E34C /* ProjectApiKey.txt */,
+				698B05D415FD47F500A8E34C /* FlurryAnalytics.h */,
+				698B05D515FD47F500A8E34C /* libFlurryAnalytics.a */,
+			);
+			path = FlurryAnalytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,10 +242,20 @@
 			files = (
 				692FA39715CD8E65008D5421 /* InfoPlist.strings in Resources */,
 				692FA3A015CD8E65008D5421 /* MainStoryboard.storyboard in Resources */,
-				692FA3A515CD8E65008D5421 /* first.png in Resources */,
-				692FA3A715CD8E66008D5421 /* first@2x.png in Resources */,
-				692FA3AC15CD8E66008D5421 /* second.png in Resources */,
-				692FA3AE15CD8E66008D5421 /* second@2x.png in Resources */,
+				692FA3C215CDA13C008D5421 /* Settings.bundle in Resources */,
+				692FA3C615CDB8C3008D5421 /* Icon.png in Resources */,
+				69A3C69C15FA8ECD00CABD7B /* Default@2x.png in Resources */,
+				69A3C69F15FA8EF900CABD7B /* Default.png in Resources */,
+				69A3C6A215FA91CE00CABD7B /* icon_mail.png in Resources */,
+				69A3C6A315FA91CE00CABD7B /* icon_settings.png in Resources */,
+				698B05C615FD266500A8E34C /* sendsmsbutton-263x37.png in Resources */,
+				698B05C915FD267B00A8E34C /* salikbigbutton-180x83.png in Resources */,
+				698B05CB15FD269E00A8E34C /* save button-72x37.png in Resources */,
+				698B05CD15FD380700A8E34C /* icon_information.png in Resources */,
+				698B05D015FD428B00A8E34C /* IconsLarge.png in Resources */,
+				698B05D915FD499600A8E34C /* ProjectApiKey.txt in Resources */,
+				698B05DB15FD552300A8E34C /* navbar.png in Resources */,
+				698B05DF15FD58D200A8E34C /* back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +269,9 @@
 				692FA39915CD8E65008D5421 /* main.m in Sources */,
 				692FA39D15CD8E65008D5421 /* AppDelegate.m in Sources */,
 				692FA3A315CD8E65008D5421 /* FirstViewController.m in Sources */,
-				692FA3AA15CD8E66008D5421 /* SecondViewController.m in Sources */,
+				692FA3B615CD95AC008D5421 /* SalikViewController.m in Sources */,
+				692FA3B915CD95C1008D5421 /* DubaiParkingViewController.m in Sources */,
+				692FA3BC15CD95E2008D5421 /* DefaultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +305,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -234,6 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -246,6 +333,67 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1E171069-E1B8-4DE8-AC87-8FF390B3DF21";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		692FA3B215CD8E66008D5421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
+				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryAnalytics\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		692FA3B315CD8E66008D5421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
+				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryAnalytics\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1E171069-E1B8-4DE8-AC87-8FF390B3DF21";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		692FA3CC15CDD395008D5421 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "SMS Dubai Roads.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "SMS Dubai Roads.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -258,29 +406,29 @@
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Ad Hoc";
 		};
-		692FA3B215CD8E66008D5421 /* Debug */ = {
+		692FA3CD15CDD395008D5421 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Tamer Alaa (XH2426VH8F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tamer Alaa (XH2426VH8F)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
 				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryAnalytics\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1E171069-E1B8-4DE8-AC87-8FF390B3DF21";
+				"PROVISIONING_PROFILE[sdk=*]" = "6212EB0D-5246-48F1-8367-D5CCA040133D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6212EB0D-5246-48F1-8367-D5CCA040133D";
 				WRAPPER_EXTENSION = app;
 			};
-			name = Debug;
-		};
-		692FA3B315CD8E66008D5421 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
-				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
+			name = "Ad Hoc";
 		};
 /* End XCBuildConfiguration section */
 
@@ -290,6 +438,7 @@
 			buildConfigurations = (
 				692FA3AF15CD8E66008D5421 /* Debug */,
 				692FA3B015CD8E66008D5421 /* Release */,
+				692FA3CC15CDD395008D5421 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -299,8 +448,10 @@
 			buildConfigurations = (
 				692FA3B215CD8E66008D5421 /* Debug */,
 				692FA3B315CD8E66008D5421 /* Release */,
+				692FA3CD15CDD395008D5421 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

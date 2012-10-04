@@ -7,14 +7,34 @@
 //
 
 #import "AppDelegate.h"
+#import "FlurryAnalytics.h"
+@implementation UINavigationBar (UINavigationBarCustomDraw)
 
+- (void)drawRect:(CGRect)rect
+{
+    [[UIImage imageNamed:@"sendsmsbutton-263x37.png"] drawInRect:rect];
+    self.topItem.titleView = [[UIView alloc] init];
+    
+    self.tintColor = [UIColor colorWithRed:0.6745098 green:0.6745098 blue:0.6745098 alpha:1.0];
+}
+
+@end
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UIImage *navBarImage = [UIImage imageNamed:@"navbar.png"];
+    [[UINavigationBar appearance] setBackgroundImage:navBarImage forBarMetrics:UIBarMetricsDefault];
+    UIImage *backButton = [[UIImage imageNamed:@"back.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0,15,0,6)];
+    
+    
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButton forState:UIControlStateNormal
+                                                    barMetrics:UIBarMetricsDefault];
+    [FlurryAnalytics startSession:@"RJK3MM5PRZ4VDTS74QPX"];
     return YES;
 }
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
