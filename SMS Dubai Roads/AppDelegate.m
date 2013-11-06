@@ -37,7 +37,7 @@
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButton forState:UIControlStateNormal
                                                     barMetrics:UIBarMetricsDefault];
      */
-    //[Flurry startSession:@"RJK3MM5PRZ4VDTS74QPX"];
+    [Flurry startSession:@"RJK3MM5PRZ4VDTS74QPX"];
     
     [Flurry logPageView];
    

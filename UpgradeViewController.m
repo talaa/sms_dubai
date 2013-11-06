@@ -7,6 +7,7 @@
 //
 
 #import "UpgradeViewController.h"
+#import "Flurry.h"
 #define kInAppPurchaseProUpgradeProductId @"6VJ733SKX8.com.springmoon.SMSDubaiRoads.upgrade"
 //#define kInAppPurchaseProUpgradeProductId @"com.springmoon.Shoplog.upgrade"
 @interface UpgradeViewController ()
@@ -203,6 +204,7 @@
                  finishTransaction:transaction];
                 NSLog(@"Transaction Done");
                 [ self dismissViewControllerAnimated:YES completion:nil];
+                [Flurry logEvent:@"Upgrade Done"];
                 break;
                 
             case SKPaymentTransactionStateFailed:
