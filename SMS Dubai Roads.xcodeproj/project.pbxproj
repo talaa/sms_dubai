@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		692B39EE1696F4A0005B1403 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B39ED1696F4A0005B1403 /* AddressBook.framework */; };
+		692B39F11696F4B2005B1403 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B39F01696F4B2005B1403 /* AudioToolbox.framework */; };
+		692B39F31696F4C0005B1403 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B39F21696F4C0005B1403 /* AVFoundation.framework */; };
+		692B39F51696F4D2005B1403 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B39F41696F4D2005B1403 /* CoreLocation.framework */; };
+		692B39F71696F4F3005B1403 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B39F61696F4F3005B1403 /* libsqlite3.dylib */; };
+		692B39F91696F4FE005B1403 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B39F81696F4FE005B1403 /* libz.dylib */; };
+		692B39FB1696F50A005B1403 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B39FA1696F50A005B1403 /* MapKit.framework */; };
+		692B39FD1696F55B005B1403 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B39FC1696F55B005B1403 /* QuartzCore.framework */; };
+		692B3BE41698CD76005B1403 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B3BE31698CD76005B1403 /* StoreKit.framework */; };
+		692B3BE61698CD8C005B1403 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B3BE51698CD8C005B1403 /* AdSupport.framework */; };
+		692B3BED1699F86C005B1403 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 692B3BEC1699F86C005B1403 /* Default-568h@2x.png */; };
+		692E8AA5166EAD0C0010C2A4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692E8AA4166EAD0B0010C2A4 /* SystemConfiguration.framework */; };
 		692FA38D15CD8E65008D5421 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692FA38C15CD8E65008D5421 /* UIKit.framework */; };
 		692FA38F15CD8E65008D5421 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692FA38E15CD8E65008D5421 /* Foundation.framework */; };
 		692FA39115CD8E65008D5421 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692FA39015CD8E65008D5421 /* CoreGraphics.framework */; };
@@ -21,22 +33,45 @@
 		692FA3C215CDA13C008D5421 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3C115CDA13C008D5421 /* Settings.bundle */; };
 		692FA3C415CDAE31008D5421 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692FA3C315CDAE31008D5421 /* MessageUI.framework */; };
 		692FA3C615CDB8C3008D5421 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3C515CDB8C3008D5421 /* Icon.png */; };
+		693A8D75180C1BE400F70C7C /* UpgradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693A8D74180C1BE400F70C7C /* UpgradeViewController.m */; };
+		69503A45169627C1001E1939 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69503A44169627C1001E1939 /* iAd.framework */; };
+		696304DC180ECF3F00067AE8 /* libFlurry_4.2.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 696304DB180ECF3F00067AE8 /* libFlurry_4.2.4.a */; };
+		696304DE180ECF9C00067AE8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696304DD180ECF9C00067AE8 /* Security.framework */; };
+		696304E1180EE95E00067AE8 /* salikhistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 696304E0180EE95E00067AE8 /* salikhistoryCell.m */; };
+		696304E418106C2D00067AE8 /* ParkinghistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 696304E318106C2D00067AE8 /* ParkinghistoryCell.m */; };
+		696A137C1800827400BDC345 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696A137B1800827400BDC345 /* CoreData.framework */; };
+		696A137F180086A000BDC345 /* SalikhistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 696A137E180086A000BDC345 /* SalikhistoryViewController.m */; };
+		696A1382180086D200BDC345 /* ParkinghistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 696A1381180086D100BDC345 /* ParkinghistoryViewController.m */; };
 		698B05C615FD266500A8E34C /* sendsmsbutton-263x37.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05C515FD266500A8E34C /* sendsmsbutton-263x37.png */; };
 		698B05C915FD267B00A8E34C /* salikbigbutton-180x83.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05C815FD267B00A8E34C /* salikbigbutton-180x83.png */; };
 		698B05CB15FD269E00A8E34C /* save button-72x37.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05CA15FD269E00A8E34C /* save button-72x37.png */; };
 		698B05CD15FD380700A8E34C /* icon_information.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05CC15FD380700A8E34C /* icon_information.png */; };
 		698B05D015FD428B00A8E34C /* IconsLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05CF15FD428B00A8E34C /* IconsLarge.png */; };
-		698B05D715FD47F500A8E34C /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698B05D515FD47F500A8E34C /* libFlurryAnalytics.a */; };
-		698B05D915FD499600A8E34C /* ProjectApiKey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 698B05D815FD499600A8E34C /* ProjectApiKey.txt */; };
 		698B05DB15FD552300A8E34C /* navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05DA15FD552300A8E34C /* navbar.png */; };
 		698B05DF15FD58D200A8E34C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 698B05DE15FD58D200A8E34C /* back.png */; };
+		69A0D494180ECD330031FB37 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A0D438180EBC9C0031FB37 /* libGoogleAdMobAds.a */; };
+		69A0D495180ECD510031FB37 /* libAdapterIAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 692B3BE81699F38D005B1403 /* libAdapterIAd.a */; };
 		69A3C69C15FA8ECD00CABD7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C69B15FA8ECD00CABD7B /* Default@2x.png */; };
 		69A3C69F15FA8EF900CABD7B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C69E15FA8EF900CABD7B /* Default.png */; };
 		69A3C6A215FA91CE00CABD7B /* icon_mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C6A015FA91CE00CABD7B /* icon_mail.png */; };
 		69A3C6A315FA91CE00CABD7B /* icon_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C6A115FA91CE00CABD7B /* icon_settings.png */; };
+		69CBDEA817FB19720076988A /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69CBDEA617FB19720076988A /* History.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		692B39ED1696F4A0005B1403 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		692B39F01696F4B2005B1403 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		692B39F21696F4C0005B1403 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		692B39F41696F4D2005B1403 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		692B39F61696F4F3005B1403 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		692B39F81696F4FE005B1403 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		692B39FA1696F50A005B1403 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		692B39FC1696F55B005B1403 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		692B3BE31698CD76005B1403 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		692B3BE51698CD8C005B1403 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		692B3BE81699F38D005B1403 /* libAdapterIAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdapterIAd.a; sourceTree = "<group>"; };
+		692B3BEC1699F86C005B1403 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		692E8AA4166EAD0B0010C2A4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		692FA38815CD8E65008D5421 /* SMS Dubai Roads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Dubai Roads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		692FA38C15CD8E65008D5421 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		692FA38E15CD8E65008D5421 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,20 +94,43 @@
 		692FA3C115CDA13C008D5421 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 		692FA3C315CDAE31008D5421 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		692FA3C515CDB8C3008D5421 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		693A8D73180C1BE400F70C7C /* UpgradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeViewController.h; sourceTree = "<group>"; };
+		693A8D74180C1BE400F70C7C /* UpgradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpgradeViewController.m; sourceTree = "<group>"; };
+		69503A44169627C1001E1939 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		696304DA180ECF3F00067AE8 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		696304DB180ECF3F00067AE8 /* libFlurry_4.2.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.2.4.a; sourceTree = "<group>"; };
+		696304DD180ECF9C00067AE8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		696304DF180EE95E00067AE8 /* salikhistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = salikhistoryCell.h; sourceTree = "<group>"; };
+		696304E0180EE95E00067AE8 /* salikhistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = salikhistoryCell.m; sourceTree = "<group>"; };
+		696304E218106C2D00067AE8 /* ParkinghistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkinghistoryCell.h; sourceTree = "<group>"; };
+		696304E318106C2D00067AE8 /* ParkinghistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkinghistoryCell.m; sourceTree = "<group>"; };
+		696A137B1800827400BDC345 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		696A137D1800869F00BDC345 /* SalikhistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalikhistoryViewController.h; sourceTree = "<group>"; };
+		696A137E180086A000BDC345 /* SalikhistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalikhistoryViewController.m; sourceTree = "<group>"; };
+		696A1380180086D100BDC345 /* ParkinghistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkinghistoryViewController.h; sourceTree = "<group>"; };
+		696A1381180086D100BDC345 /* ParkinghistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkinghistoryViewController.m; sourceTree = "<group>"; };
 		698B05C515FD266500A8E34C /* sendsmsbutton-263x37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sendsmsbutton-263x37.png"; sourceTree = "<group>"; };
 		698B05C815FD267B00A8E34C /* salikbigbutton-180x83.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "salikbigbutton-180x83.png"; sourceTree = "<group>"; };
 		698B05CA15FD269E00A8E34C /* save button-72x37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save button-72x37.png"; sourceTree = "<group>"; };
 		698B05CC15FD380700A8E34C /* icon_information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_information.png; sourceTree = "<group>"; };
 		698B05CF15FD428B00A8E34C /* IconsLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconsLarge.png; sourceTree = "<group>"; };
-		698B05D415FD47F500A8E34C /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
-		698B05D515FD47F500A8E34C /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
-		698B05D815FD499600A8E34C /* ProjectApiKey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProjectApiKey.txt; sourceTree = "<group>"; };
 		698B05DA15FD552300A8E34C /* navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbar.png; sourceTree = "<group>"; };
 		698B05DE15FD58D200A8E34C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		69A0D42F180EBC9C0031FB37 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		69A0D430180EBC9C0031FB37 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		69A0D431180EBC9C0031FB37 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		69A0D432180EBC9C0031FB37 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		69A0D433180EBC9C0031FB37 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		69A0D434180EBC9C0031FB37 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		69A0D435180EBC9C0031FB37 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		69A0D436180EBC9C0031FB37 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		69A0D437180EBC9C0031FB37 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		69A0D438180EBC9C0031FB37 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
 		69A3C69B15FA8ECD00CABD7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		69A3C69E15FA8EF900CABD7B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		69A3C6A015FA91CE00CABD7B /* icon_mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_mail.png; sourceTree = "<group>"; };
 		69A3C6A115FA91CE00CABD7B /* icon_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_settings.png; sourceTree = "<group>"; };
+		69CBDEA717FB19720076988A /* History.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = History.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,21 +138,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696304DE180ECF9C00067AE8 /* Security.framework in Frameworks */,
+				69A0D495180ECD510031FB37 /* libAdapterIAd.a in Frameworks */,
+				69A0D494180ECD330031FB37 /* libGoogleAdMobAds.a in Frameworks */,
+				696A137C1800827400BDC345 /* CoreData.framework in Frameworks */,
+				692B3BE61698CD8C005B1403 /* AdSupport.framework in Frameworks */,
+				692B3BE41698CD76005B1403 /* StoreKit.framework in Frameworks */,
+				692B39FD1696F55B005B1403 /* QuartzCore.framework in Frameworks */,
+				692B39FB1696F50A005B1403 /* MapKit.framework in Frameworks */,
+				692B39F91696F4FE005B1403 /* libz.dylib in Frameworks */,
+				692B39F71696F4F3005B1403 /* libsqlite3.dylib in Frameworks */,
+				692B39F51696F4D2005B1403 /* CoreLocation.framework in Frameworks */,
+				692B39F31696F4C0005B1403 /* AVFoundation.framework in Frameworks */,
+				692B39F11696F4B2005B1403 /* AudioToolbox.framework in Frameworks */,
+				696304DC180ECF3F00067AE8 /* libFlurry_4.2.4.a in Frameworks */,
+				692B39EE1696F4A0005B1403 /* AddressBook.framework in Frameworks */,
+				69503A45169627C1001E1939 /* iAd.framework in Frameworks */,
+				692E8AA5166EAD0C0010C2A4 /* SystemConfiguration.framework in Frameworks */,
 				692FA3C415CDAE31008D5421 /* MessageUI.framework in Frameworks */,
 				692FA38D15CD8E65008D5421 /* UIKit.framework in Frameworks */,
 				692FA38F15CD8E65008D5421 /* Foundation.framework in Frameworks */,
 				692FA39115CD8E65008D5421 /* CoreGraphics.framework in Frameworks */,
-				698B05D715FD47F500A8E34C /* libFlurryAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		692B39FE1696F5EA005B1403 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				69A0D3A2180EBC9A0031FB37 /* GoogleAdMobAdsSdkiOS-6.5.1 */,
+				692B3BE71699F38C005B1403 /* LibAdapterIAd-Oct42012 */,
+			);
+			name = SDK;
+			path = Flurry;
+			sourceTree = "<group>";
+		};
+		692B3BE71699F38C005B1403 /* LibAdapterIAd-Oct42012 */ = {
+			isa = PBXGroup;
+			children = (
+				692B3BE81699F38D005B1403 /* libAdapterIAd.a */,
+			);
+			path = "LibAdapterIAd-Oct42012";
+			sourceTree = "<group>";
+		};
 		692FA37D15CD8E65008D5421 = {
 			isa = PBXGroup;
 			children = (
-				698B05D115FD43C800A8E34C /* Flurry */,
+				69A0D493180EC1070031FB37 /* Flurry */,
+				693A8D76180C1BF600F70C7C /* INAppHelper */,
+				692B39FE1696F5EA005B1403 /* SDK */,
 				698B05CE15FD41E600A8E34C /* Images */,
 				692FA39215CD8E65008D5421 /* SMS Dubai Roads */,
 				692FA38B15CD8E65008D5421 /* Frameworks */,
@@ -113,6 +207,20 @@
 		692FA38B15CD8E65008D5421 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				696304DD180ECF9C00067AE8 /* Security.framework */,
+				696A137B1800827400BDC345 /* CoreData.framework */,
+				692B3BE51698CD8C005B1403 /* AdSupport.framework */,
+				692B3BE31698CD76005B1403 /* StoreKit.framework */,
+				692B39FC1696F55B005B1403 /* QuartzCore.framework */,
+				692B39FA1696F50A005B1403 /* MapKit.framework */,
+				692B39F81696F4FE005B1403 /* libz.dylib */,
+				692B39F61696F4F3005B1403 /* libsqlite3.dylib */,
+				692B39F41696F4D2005B1403 /* CoreLocation.framework */,
+				692B39F21696F4C0005B1403 /* AVFoundation.framework */,
+				692B39F01696F4B2005B1403 /* AudioToolbox.framework */,
+				692B39ED1696F4A0005B1403 /* AddressBook.framework */,
+				69503A44169627C1001E1939 /* iAd.framework */,
+				692E8AA4166EAD0B0010C2A4 /* SystemConfiguration.framework */,
 				692FA3C315CDAE31008D5421 /* MessageUI.framework */,
 				692FA38C15CD8E65008D5421 /* UIKit.framework */,
 				692FA38E15CD8E65008D5421 /* Foundation.framework */,
@@ -124,10 +232,14 @@
 		692FA39215CD8E65008D5421 /* SMS Dubai Roads */ = {
 			isa = PBXGroup;
 			children = (
+				696A137D1800869F00BDC345 /* SalikhistoryViewController.h */,
+				696A137E180086A000BDC345 /* SalikhistoryViewController.m */,
 				692FA3B415CD95AC008D5421 /* SalikViewController.h */,
 				692FA3B515CD95AC008D5421 /* SalikViewController.m */,
 				692FA3B715CD95C1008D5421 /* DubaiParkingViewController.h */,
 				692FA3B815CD95C1008D5421 /* DubaiParkingViewController.m */,
+				696A1380180086D100BDC345 /* ParkinghistoryViewController.h */,
+				696A1381180086D100BDC345 /* ParkinghistoryViewController.m */,
 				692FA3BA15CD95E2008D5421 /* DefaultsViewController.h */,
 				692FA3BB15CD95E2008D5421 /* DefaultsViewController.m */,
 				692FA39B15CD8E65008D5421 /* AppDelegate.h */,
@@ -135,6 +247,11 @@
 				692FA39E15CD8E65008D5421 /* MainStoryboard.storyboard */,
 				692FA3A115CD8E65008D5421 /* FirstViewController.h */,
 				692FA3A215CD8E65008D5421 /* FirstViewController.m */,
+				69CBDEA617FB19720076988A /* History.xcdatamodeld */,
+				696304DF180EE95E00067AE8 /* salikhistoryCell.h */,
+				696304E0180EE95E00067AE8 /* salikhistoryCell.m */,
+				696304E218106C2D00067AE8 /* ParkinghistoryCell.h */,
+				696304E318106C2D00067AE8 /* ParkinghistoryCell.m */,
 				692FA39315CD8E65008D5421 /* Supporting Files */,
 			);
 			path = "SMS Dubai Roads";
@@ -152,9 +269,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		693A8D76180C1BF600F70C7C /* INAppHelper */ = {
+			isa = PBXGroup;
+			children = (
+				693A8D73180C1BE400F70C7C /* UpgradeViewController.h */,
+				693A8D74180C1BE400F70C7C /* UpgradeViewController.m */,
+			);
+			name = INAppHelper;
+			sourceTree = "<group>";
+		};
 		698B05CE15FD41E600A8E34C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				692B3BEC1699F86C005B1403 /* Default-568h@2x.png */,
 				698B05DE15FD58D200A8E34C /* back.png */,
 				698B05DA15FD552300A8E34C /* navbar.png */,
 				698B05CF15FD428B00A8E34C /* IconsLarge.png */,
@@ -171,22 +298,30 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		698B05D115FD43C800A8E34C /* Flurry */ = {
+		69A0D3A2180EBC9A0031FB37 /* GoogleAdMobAdsSdkiOS-6.5.1 */ = {
 			isa = PBXGroup;
 			children = (
-				698B05D315FD47F500A8E34C /* FlurryAnalytics */,
+				69A0D42F180EBC9C0031FB37 /* GADAdMobExtras.h */,
+				69A0D430180EBC9C0031FB37 /* GADAdNetworkExtras.h */,
+				69A0D431180EBC9C0031FB37 /* GADAdSize.h */,
+				69A0D432180EBC9C0031FB37 /* GADBannerView.h */,
+				69A0D433180EBC9C0031FB37 /* GADBannerViewDelegate.h */,
+				69A0D434180EBC9C0031FB37 /* GADInterstitial.h */,
+				69A0D435180EBC9C0031FB37 /* GADInterstitialDelegate.h */,
+				69A0D436180EBC9C0031FB37 /* GADRequest.h */,
+				69A0D437180EBC9C0031FB37 /* GADRequestError.h */,
+				69A0D438180EBC9C0031FB37 /* libGoogleAdMobAds.a */,
 			);
-			name = Flurry;
+			path = "GoogleAdMobAdsSdkiOS-6.5.1";
 			sourceTree = "<group>";
 		};
-		698B05D315FD47F500A8E34C /* FlurryAnalytics */ = {
+		69A0D493180EC1070031FB37 /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				698B05D815FD499600A8E34C /* ProjectApiKey.txt */,
-				698B05D415FD47F500A8E34C /* FlurryAnalytics.h */,
-				698B05D515FD47F500A8E34C /* libFlurryAnalytics.a */,
+				696304DA180ECF3F00067AE8 /* Flurry.h */,
+				696304DB180ECF3F00067AE8 /* libFlurry_4.2.4.a */,
 			);
-			path = FlurryAnalytics;
+			name = Flurry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +350,13 @@
 		692FA37F15CD8E65008D5421 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Tamer Alaa";
+				TargetAttributes = {
+					692FA38715CD8E65008D5421 = {
+						DevelopmentTeam = 6VJ733SKX8;
+					};
+				};
 			};
 			buildConfigurationList = 692FA38215CD8E65008D5421 /* Build configuration list for PBXProject "SMS Dubai Roads" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -253,9 +393,9 @@
 				698B05CB15FD269E00A8E34C /* save button-72x37.png in Resources */,
 				698B05CD15FD380700A8E34C /* icon_information.png in Resources */,
 				698B05D015FD428B00A8E34C /* IconsLarge.png in Resources */,
-				698B05D915FD499600A8E34C /* ProjectApiKey.txt in Resources */,
 				698B05DB15FD552300A8E34C /* navbar.png in Resources */,
 				698B05DF15FD58D200A8E34C /* back.png in Resources */,
+				692B3BED1699F86C005B1403 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +407,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				692FA39915CD8E65008D5421 /* main.m in Sources */,
+				696A1382180086D200BDC345 /* ParkinghistoryViewController.m in Sources */,
 				692FA39D15CD8E65008D5421 /* AppDelegate.m in Sources */,
 				692FA3A315CD8E65008D5421 /* FirstViewController.m in Sources */,
 				692FA3B615CD95AC008D5421 /* SalikViewController.m in Sources */,
+				696304E418106C2D00067AE8 /* ParkinghistoryCell.m in Sources */,
+				696304E1180EE95E00067AE8 /* salikhistoryCell.m in Sources */,
+				696A137F180086A000BDC345 /* SalikhistoryViewController.m in Sources */,
 				692FA3B915CD95C1008D5421 /* DubaiParkingViewController.m in Sources */,
+				693A8D75180C1BE400F70C7C /* UpgradeViewController.m in Sources */,
+				69CBDEA817FB19720076988A /* History.xcdatamodeld in Sources */,
 				692FA3BC15CD95E2008D5421 /* DefaultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,11 +447,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -316,11 +467,16 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -329,20 +485,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1E171069-E1B8-4DE8-AC87-8FF390B3DF21";
+				PROVISIONING_PROFILE = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -351,17 +516,21 @@
 		692FA3B215CD8E66008D5421 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa (6VJ733SKX8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa (6VJ733SKX8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
 				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/FlurryAnalytics\"",
+					"/Users/tamerenas/Tamer\\ Folder/Xcode\\ Projects/SMS_Dubai_Roads\\ copy/Flurry/GoogleAdMobAdsSdkiOS-6.5.1",
+					"/Users/tamerenas/Tamer\\ Folder/Xcode\\ Projects/SMS_Dubai_Roads\\ copy/Flurry/LibAdapterIAd-Oct42012",
+					"/Users/tamerenas/Tamer\\ Folder/Xcode\\ Projects/SMS_Dubai_Roads\\ copy",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3704E73E-A4CA-4633-AE30-6D7547D34405";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3704E73E-A4CA-4633-AE30-6D7547D34405";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -369,17 +538,21 @@
 		692FA3B315CD8E66008D5421 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa (6VJ733SKX8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
 				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/FlurryAnalytics\"",
+					"/Users/tamerenas/Tamer\\ Folder/Xcode\\ Projects/SMS_Dubai_Roads\\ copy/Flurry/GoogleAdMobAdsSdkiOS-6.5.1",
+					"/Users/tamerenas/Tamer\\ Folder/Xcode\\ Projects/SMS_Dubai_Roads\\ copy/Flurry/LibAdapterIAd-Oct42012",
+					"/Users/tamerenas/Tamer\\ Folder/Xcode\\ Projects/SMS_Dubai_Roads\\ copy",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1E171069-E1B8-4DE8-AC87-8FF390B3DF21";
+				PROVISIONING_PROFILE = "3704E73E-A4CA-4633-AE30-6D7547D34405";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3704E73E-A4CA-4633-AE30-6D7547D34405";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -388,21 +561,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = "SMS Dubai Roads.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "SMS Dubai Roads.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa";
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -411,21 +592,23 @@
 		692FA3CD15CDD395008D5421 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Tamer Alaa (XH2426VH8F)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tamer Alaa (XH2426VH8F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Tamer Alaa";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa (6VJ733SKX8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
 				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/FlurryAnalytics\"",
+					"/Users/tamerenas/Tamer\\ Folder/Xcode\\ Projects/SMS_Dubai_Roads\\ copy/Flurry/GoogleAdMobAdsSdkiOS-6.5.1",
+					"/Users/tamerenas/Tamer\\ Folder/Xcode\\ Projects/SMS_Dubai_Roads\\ copy/Flurry/LibAdapterIAd-Oct42012",
+					"/Users/tamerenas/Tamer\\ Folder/Xcode\\ Projects/SMS_Dubai_Roads\\ copy",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1E171069-E1B8-4DE8-AC87-8FF390B3DF21";
-				"PROVISIONING_PROFILE[sdk=*]" = "6212EB0D-5246-48F1-8367-D5CCA040133D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6212EB0D-5246-48F1-8367-D5CCA040133D";
+				PROVISIONING_PROFILE = "3704E73E-A4CA-4633-AE30-6D7547D34405";
+				"PROVISIONING_PROFILE[sdk=*]" = "3704E73E-A4CA-4633-AE30-6D7547D34405";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3704E73E-A4CA-4633-AE30-6D7547D34405";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Ad Hoc";
@@ -454,6 +637,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		69CBDEA617FB19720076988A /* History.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				69CBDEA717FB19720076988A /* History.xcdatamodel */,
+			);
+			currentVersion = 69CBDEA717FB19720076988A /* History.xcdatamodel */;
+			name = History.xcdatamodeld;
+			path = ../History.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 692FA37F15CD8E65008D5421 /* Project object */;
 }

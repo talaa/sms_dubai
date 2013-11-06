@@ -7,14 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GADBannerView.h"
 #import <MessageUI/MessageUI.h>
+#import <iAd/iAd.h>
 #define KCarPlateNo @"Car Plate No:"
-@interface DubaiParkingViewController : UIViewController<MFMessageComposeViewControllerDelegate>
-
+@interface DubaiParkingViewController : UIViewController<MFMessageComposeViewControllerDelegate>{
+GADBannerView *AdBanner;
+}
+@property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic,retain) IBOutlet UITextField *carplatenumber;
 @property (nonatomic,retain) IBOutlet UITextField *ParkingAreano;
 @property (nonatomic,retain)IBOutlet UILabel *smscontext;
 @property (nonatomic,retain) IBOutlet UIStepper *addhours;
 @property (nonatomic,retain) IBOutlet UILabel *Parkinghourslabel;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *gotohistory;
+
 
 @end

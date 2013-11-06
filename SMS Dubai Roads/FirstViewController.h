@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface FirstViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *upgradebutton;
 
 @end

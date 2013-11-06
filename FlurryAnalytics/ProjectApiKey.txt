@@ -1,2 +1,0 @@
-Project: SMS Roads
-API Key: RJK3MM5PRZ4VDTS74QPX

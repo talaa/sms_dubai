@@ -48,11 +48,12 @@
     if ([[defaults objectForKey:KCarPlateNo] isEqualToString:@""]){
         NSLog(@"This is the First entry%@",[defaults objectForKey:KCarPlateNo]);
     }
-    [carplatenumberdef setText:[defaults objectForKey:KSalikPINNo]];
+    [carplatenumberdef setText:[defaults objectForKey:KCarPlateNo]];
+    /*
     if ([[defaults objectForKey:KPhonetest] isEqualToString:@""]){
-        NSLog(@"This is the First entry%@",[defaults objectForKey:KCarPlateNo]);
+        NSLog(@"This is the First entry%@",[defaults objectForKey:KPhonetest]);
     }
-    
+    */
 
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -62,7 +63,7 @@
 - (void)viewDidLoad
 {
     
-    
+    //self.tableView.backgroundColor=[UIColor blueColor];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.

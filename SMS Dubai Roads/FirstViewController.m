@@ -13,11 +13,25 @@
 @end
 
 @implementation FirstViewController
+@synthesize upgradebutton;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
+}
+-(void)viewWillAppear:(BOOL)animated{
+    NSUserDefaults *userdefaults =[NSUserDefaults standardUserDefaults];
+    //KPROUprade=YES;
+    NSLog(@"The KPROUPgrade is %i",[userdefaults boolForKey:KPROUprade]);
+    if ([userdefaults boolForKey:KPROUprade]) {
+        upgradebutton.enabled=NO;
+        upgradebutton.title=@"";
+        
+    }
+
+
 }
 
 - (void)viewDidUnload
