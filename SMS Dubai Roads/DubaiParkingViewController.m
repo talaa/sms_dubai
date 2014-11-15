@@ -10,12 +10,13 @@
 #import "Flurry.h"
 #import "AppDelegate.h"
 #define KPhonetest @"Phonetest"
+#define AdID @"ca-app-pub-9978956748838024/7419739152"
 @interface DubaiParkingViewController ()
 
 @end
 
 @implementation DubaiParkingViewController
-@synthesize carplatenumber,ParkingAreano,Parkinghourslabel,addhours,smscontext,managedObjectContext,gotohistory;
+@synthesize carplatenumber,ParkingAreano,Parkinghourslabel,addhours,smscontext,managedObjectContext,gotohistory,sendsms;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,20 +35,22 @@
     if (![userdefaults boolForKey:KPROUprade]) {
         gotohistory.enabled=NO;
     }
-    
+    [sendsms.layer setCornerRadius:20.0f];
+    [sendsms.layer setMasksToBounds:YES];
 	// Do any additional setup after loading the view.
     // Create a view of the standard size at the top of the screen.
     // Available AdSize constants are explained in GADAdSize.h.
     AdBanner = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
     
     // Specify the ad's "unit identifier." This is your AdMob Publisher ID.
-    AdBanner.adUnitID = @"a150e6c061eb67b";
+    //AdBanner.adUnitID = @"a150e6c061eb67b";
+    AdBanner.adUnitID = AdID;
     
     // Let the runtime know which UIViewController to restore after taking
     // the user wherever the ad goes and add it to the view hierarchy.
     AdBanner.rootViewController = self;
     [AdBanner setFrame:CGRectMake(0,
-                                  self.view.frame.size.height-4*AdBanner.bounds.size.height,
+                                  self.view.frame.size.height-AdBanner.bounds.size.height-50,
                                   AdBanner.bounds.size.width,
                                   AdBanner.bounds.size.height)];
     [self.view addSubview:AdBanner];

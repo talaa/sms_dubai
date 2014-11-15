@@ -15,7 +15,7 @@
 @end
 
 @implementation UpgradeViewController
-@synthesize buybutton,spinner;
+@synthesize buybutton,spinner,restorebutton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,6 +43,7 @@
         NSLog(@"The Parental Control is enabled");
     }
     buybutton.enabled=NO;
+    restorebutton.enabled=NO;
     //MyStoreObserver *observer = [[MyStoreObserver alloc] init];
     //[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
     [self requestProductData];
@@ -52,7 +53,7 @@
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    NSLog(@"The button Pressed is %d",buttonIndex);
+    NSLog(@"The button Pressed is %ld",(long)buttonIndex);
     if (buttonIndex==1) {
         NSString *link=@"https://itunes.apple.com/us/app/sms-roads/id560600154?ls=1&mt=8";
         //NSString *link=@"http://www.google.com";
@@ -82,6 +83,10 @@
 
 }
 
+- (IBAction)restoreaction:(id)sender {
+    [[SKPaymentQueue defaultQueue]   restoreCompletedTransactions];
+}
+
 
 
 
@@ -98,7 +103,7 @@
     // Populate your UI from the products list.
     // Save a reference to the products list.
     SKProduct *validproduct=nil;
-    int count=[response.products count];
+    NSUInteger count=[response.products count];
     if (count>0) {
         validproduct =[response.products objectAtIndex:0];
         _product=validproduct;
@@ -107,6 +112,7 @@
         NSLog(@"Product price: %@" , validproduct.price);
         NSLog(@"Product id: %@" , validproduct.productIdentifier);
         buybutton.enabled=YES;
+        restorebutton.enabled=YES;
         [spinner stopAnimating];
         spinner.hidden=YES;
 

@@ -15,7 +15,9 @@
 
 @property (strong, nonatomic) SKProduct *product;
 @property (retain,nonatomic) IBOutlet UIButton *buybutton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *restorebutton;
 @property (nonatomic,retain) IBOutlet UIActivityIndicatorView *spinner;
 -(IBAction)buyproduct:(id)sender;
+- (IBAction)restoreaction:(id)sender;
 -(void)requestProductData;
 @end

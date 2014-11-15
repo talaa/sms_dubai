@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GADBannerView.h"
 #import <MessageUI/MessageUI.h>
+#import <QuartzCore/QuartzCore.h>
 #import <iAd/iAd.h>
 #define KCarPlateNo @"Car Plate No:"
 @interface DubaiParkingViewController : UIViewController<MFMessageComposeViewControllerDelegate>{
@@ -21,6 +22,7 @@ GADBannerView *AdBanner;
 @property (nonatomic,retain) IBOutlet UIStepper *addhours;
 @property (nonatomic,retain) IBOutlet UILabel *Parkinghourslabel;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *gotohistory;
+@property (weak, nonatomic) IBOutlet UIButton *sendsms;
 
 
 @end

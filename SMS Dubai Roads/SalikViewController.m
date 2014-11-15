@@ -9,6 +9,7 @@
 #import "SalikViewController.h"
 #import "Flurry.h"
 #import "AppDelegate.h"
+#define AdID @"ca-app-pub-9978956748838024/7419739152"
 @interface SalikViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *valuecontrol;
 @property (weak, nonatomic) IBOutlet UITextField *salikvalue;
@@ -16,7 +17,8 @@
 @end
 
 @implementation SalikViewController
-@synthesize accountnumber,pinnumber,rechargecardno,smscontext,valuecontrol,salikvalue,managedObjectContext,gotohistory,adBanner;
+@synthesize accountnumber,pinnumber,rechargecardno,smscontext,valuecontrol,salikvalue,managedObjectContext,gotohistory,adBanner
+,sendsms;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -122,25 +124,29 @@
         gotohistory.enabled=NO;
     }
     [super viewDidLoad];
-    
+    [sendsms.layer setCornerRadius:20.0f];
+    [sendsms.layer setMasksToBounds:YES];
 	// Do any additional setup after loading the view.
     // Create a view of the standard size at the top of the screen.
     // Available AdSize constants are explained in GADAdSize.h.
     adBanner = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
     
     // Specify the ad's "unit identifier." This is your AdMob Publisher ID.
-    adBanner.adUnitID = @"a150e6c061eb67b";
+    
+    //adBanner.adUnitID = @"a150e6c061eb67b";
+    adBanner.adUnitID = AdID;
     
     // Let the runtime know which UIViewController to restore after taking
     // the user wherever the ad goes and add it to the view hierarchy.
     adBanner.rootViewController = self;
     [adBanner setFrame:CGRectMake(0,
-                                     self.view.frame.size.height-4*adBanner.bounds.size.height,
+                                     self.view.frame.size.height-adBanner.bounds.size.height-50,
                                      adBanner.bounds.size.width,
                                      adBanner.bounds.size.height)];
     [self.view addSubview:adBanner];
     
     // Initiate a generic request to load it with an ad.
+    
     [adBanner loadRequest:[GADRequest request]];
     
     if (managedObjectContext == nil)

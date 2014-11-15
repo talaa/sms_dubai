@@ -38,7 +38,7 @@
                                                     barMetrics:UIBarMetricsDefault];
      */
     [Flurry startSession:@"RJK3MM5PRZ4VDTS74QPX"];
-    
+    [Flurry setCrashReportingEnabled:YES];
     [Flurry logPageView];
    
     return YES;

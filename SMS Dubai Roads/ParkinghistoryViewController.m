@@ -56,7 +56,7 @@
     // Return the number of rows in the section.
     id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
     return [sectionInfo numberOfObjects];
-    NSLog(@"The number of objects %i",[sectionInfo numberOfObjects]);
+    //NSLog(@"The number of objects %lu",(unsigned long)[sectionInfo numberOfObjects]);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

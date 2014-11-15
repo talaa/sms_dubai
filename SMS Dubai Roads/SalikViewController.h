@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 #import <iAd/iAd.h>
+#import <QuartzCore/QuartzCore.h>
 #import "GADBannerView.h"
 #define KSalikAccountNo @"Salik Account No:"
 #define KSalikPINNo @"Salik Pin No:"
@@ -25,6 +26,7 @@
 @property (nonatomic,retain) IBOutlet UILabel *smscontext;
 @property (retain, nonatomic) IBOutlet GADBannerView *adBanner;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *gotohistory;
+@property (weak, nonatomic) IBOutlet UIButton *sendsms;
 
 
 @end

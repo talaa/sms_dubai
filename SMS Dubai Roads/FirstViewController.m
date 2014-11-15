@@ -13,11 +13,19 @@
 @end
 
 @implementation FirstViewController
-@synthesize upgradebutton;
+@synthesize upgradebutton,salikbutton,parkingbutton,taxibutton,trafficbutton;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [salikbutton.layer setCornerRadius:15.0f];
+    [salikbutton.layer setMasksToBounds:YES];
+    [parkingbutton.layer setCornerRadius:15.0f];
+    [parkingbutton.layer setMasksToBounds:YES];
+    [taxibutton.layer setCornerRadius:15.0f];
+    [taxibutton.layer setMasksToBounds:YES];
+    [trafficbutton.layer setCornerRadius:15.0f];
+    [trafficbutton.layer setMasksToBounds:YES];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -32,6 +40,20 @@
     }
 
 
+}
+- (IBAction)MakeaCall:(id)sender {
+    UIDevice *device = [UIDevice currentDevice];
+    if ([[device model] isEqualToString:@"iPhone"] ) {
+        NSString *phoneppp=@"tel:";
+        NSString *phonenumber=@"042080808";
+        NSString *Phone=[phoneppp stringByAppendingString:phonenumber ] ;
+        //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:130-032-2837"]]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:Phone]];
+    } else {
+        UIAlertView *Notpermitted=[[UIAlertView alloc] initWithTitle:@"Alert" message:@"Your device doesn't support this feature." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [Notpermitted show];
+        
+    }
 }
 
 - (void)viewDidUnload
