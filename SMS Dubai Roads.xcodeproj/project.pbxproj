@@ -60,12 +60,49 @@
 		69A22B781A160183004DB312 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 69A22B761A160183004DB312 /* README.txt */; };
 		69A22B7B1A1601A7004DB312 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A22B791A1601A7004DB312 /* EventKit.framework */; };
 		69A22B7C1A1601A7004DB312 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A22B7A1A1601A7004DB312 /* EventKitUI.framework */; };
+		69A22B831A17D00C004DB312 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A22B821A17D00C004DB312 /* NotificationCenter.framework */; };
+		69A22B881A17D00C004DB312 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A22B871A17D00C004DB312 /* TodayViewController.swift */; };
+		69A22B8A1A17D00C004DB312 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A22B891A17D00C004DB312 /* MainInterface.storyboard */; };
+		69A22B8E1A17D00C004DB312 /* Traffic_Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69A22B811A17D00C004DB312 /* Traffic_Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69A22B991A17E285004DB312 /* trafficmap.html in Resources */ = {isa = PBXBuildFile; fileRef = 69A22B971A17E285004DB312 /* trafficmap.html */; };
+		69A22B9A1A17E285004DB312 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A22B981A17E285004DB312 /* TemplateIcon2x.png */; };
 		69A3C69C15FA8ECD00CABD7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C69B15FA8ECD00CABD7B /* Default@2x.png */; };
 		69A3C69F15FA8EF900CABD7B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C69E15FA8EF900CABD7B /* Default.png */; };
 		69A3C6A215FA91CE00CABD7B /* icon_mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C6A015FA91CE00CABD7B /* icon_mail.png */; };
 		69A3C6A315FA91CE00CABD7B /* icon_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C6A115FA91CE00CABD7B /* icon_settings.png */; };
 		69CBDEA817FB19720076988A /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69CBDEA617FB19720076988A /* History.xcdatamodeld */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69A22B8B1A17D00C004DB312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 692FA37F15CD8E65008D5421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A22B801A17D00C004DB312;
+			remoteInfo = Traffic_Widget;
+		};
+		69A22B8F1A17D00C004DB312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 692FA37F15CD8E65008D5421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A22B801A17D00C004DB312;
+			remoteInfo = Traffic_Widget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		69A22B8D1A17D00C004DB312 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				69A22B8E1A17D00C004DB312 /* Traffic_Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		692582E71A113AB200643A08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -166,6 +203,15 @@
 		69A22B761A160183004DB312 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		69A22B791A1601A7004DB312 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		69A22B7A1A1601A7004DB312 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		69A22B811A17D00C004DB312 /* Traffic_Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Traffic_Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A22B821A17D00C004DB312 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		69A22B861A17D00C004DB312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A22B871A17D00C004DB312 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		69A22B891A17D00C004DB312 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		69A22B951A17D934004DB312 /* Traffic_Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Traffic_Widget.entitlements; sourceTree = "<group>"; };
+		69A22B961A17DB08004DB312 /* SMS Dubai Roads.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SMS Dubai Roads.entitlements"; sourceTree = "<group>"; };
+		69A22B971A17E285004DB312 /* trafficmap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = trafficmap.html; sourceTree = "<group>"; };
+		69A22B981A17E285004DB312 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 		69A3C69B15FA8ECD00CABD7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		69A3C69E15FA8EF900CABD7B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		69A3C6A015FA91CE00CABD7B /* icon_mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_mail.png; sourceTree = "<group>"; };
@@ -204,6 +250,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69A22B7E1A17D00C004DB312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A22B831A17D00C004DB312 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -232,6 +286,7 @@
 				692B39FE1696F5EA005B1403 /* SDK */,
 				698B05CE15FD41E600A8E34C /* Images */,
 				692FA39215CD8E65008D5421 /* SMS Dubai Roads */,
+				69A22B841A17D00C004DB312 /* Traffic_Widget */,
 				692FA38B15CD8E65008D5421 /* Frameworks */,
 				692FA38915CD8E65008D5421 /* Products */,
 			);
@@ -241,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				692FA38815CD8E65008D5421 /* SMS Dubai Roads.app */,
+				69A22B811A17D00C004DB312 /* Traffic_Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,6 +325,7 @@
 				692FA38C15CD8E65008D5421 /* UIKit.framework */,
 				692FA38E15CD8E65008D5421 /* Foundation.framework */,
 				692FA39015CD8E65008D5421 /* CoreGraphics.framework */,
+				69A22B821A17D00C004DB312 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +333,7 @@
 		692FA39215CD8E65008D5421 /* SMS Dubai Roads */ = {
 			isa = PBXGroup;
 			children = (
+				69A22B961A17DB08004DB312 /* SMS Dubai Roads.entitlements */,
 				69945E09194E35F6004CD5CF /* salikwebViewController.h */,
 				69945E0A194E35F6004CD5CF /* salikwebViewController.m */,
 				696A137D1800869F00BDC345 /* SalikhistoryViewController.h */,
@@ -437,6 +495,27 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		69A22B841A17D00C004DB312 /* Traffic_Widget */ = {
+			isa = PBXGroup;
+			children = (
+				69A22B951A17D934004DB312 /* Traffic_Widget.entitlements */,
+				69A22B871A17D00C004DB312 /* TodayViewController.swift */,
+				69A22B891A17D00C004DB312 /* MainInterface.storyboard */,
+				69A22B851A17D00C004DB312 /* Supporting Files */,
+			);
+			path = Traffic_Widget;
+			sourceTree = "<group>";
+		};
+		69A22B851A17D00C004DB312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69A22B861A17D00C004DB312 /* Info.plist */,
+				69A22B971A17E285004DB312 /* trafficmap.html */,
+				69A22B981A17E285004DB312 /* TemplateIcon2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,15 +526,35 @@
 				692FA38415CD8E65008D5421 /* Sources */,
 				692FA38515CD8E65008D5421 /* Frameworks */,
 				692FA38615CD8E65008D5421 /* Resources */,
+				69A22B8D1A17D00C004DB312 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				69A22B8C1A17D00C004DB312 /* PBXTargetDependency */,
+				69A22B901A17D00C004DB312 /* PBXTargetDependency */,
 			);
 			name = "SMS Dubai Roads";
 			productName = "SMS Dubai Roads";
 			productReference = 692FA38815CD8E65008D5421 /* SMS Dubai Roads.app */;
 			productType = "com.apple.product-type.application";
+		};
+		69A22B801A17D00C004DB312 /* Traffic_Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A22B911A17D00D004DB312 /* Build configuration list for PBXNativeTarget "Traffic_Widget" */;
+			buildPhases = (
+				69A22B7D1A17D00C004DB312 /* Sources */,
+				69A22B7E1A17D00C004DB312 /* Frameworks */,
+				69A22B7F1A17D00C004DB312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Traffic_Widget;
+			productName = Traffic_Widget;
+			productReference = 69A22B811A17D00C004DB312 /* Traffic_Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -468,6 +567,20 @@
 				TargetAttributes = {
 					692FA38715CD8E65008D5421 = {
 						DevelopmentTeam = 6VJ733SKX8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					69A22B801A17D00C004DB312 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 6VJ733SKX8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -484,6 +597,7 @@
 			projectRoot = "";
 			targets = (
 				692FA38715CD8E65008D5421 /* SMS Dubai Roads */,
+				69A22B801A17D00C004DB312 /* Traffic_Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -516,6 +630,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69A22B7F1A17D00C004DB312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A22B8A1A17D00C004DB312 /* MainInterface.storyboard in Resources */,
+				69A22B991A17E285004DB312 /* trafficmap.html in Resources */,
+				69A22B9A1A17E285004DB312 /* TemplateIcon2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -541,7 +665,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69A22B7D1A17D00C004DB312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A22B881A17D00C004DB312 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69A22B8C1A17D00C004DB312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A22B801A17D00C004DB312 /* Traffic_Widget */;
+			targetProxy = 69A22B8B1A17D00C004DB312 /* PBXContainerItemProxy */;
+		};
+		69A22B901A17D00C004DB312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A22B801A17D00C004DB312 /* Traffic_Widget */;
+			targetProxy = 69A22B8F1A17D00C004DB312 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		692FA39515CD8E65008D5421 /* InfoPlist.strings */ = {
@@ -579,6 +724,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa";
 				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -619,6 +765,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa";
 				COPY_PHASE_STRIP = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -642,22 +789,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "SMS Dubai Roads/SMS Dubai Roads.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa (6VJ733SKX8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
 				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
-					copy,
 					"$(PROJECT_DIR)/Flurry",
-					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.9.2/Add-ons/GoogleAnalyticsServicesiOS_3.06",
-					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.9.2",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.12.2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
 				WRAPPER_EXTENSION = app;
 			};
@@ -668,22 +813,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "SMS Dubai Roads/SMS Dubai Roads.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa (6VJ733SKX8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
 				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
-					copy,
 					"$(PROJECT_DIR)/Flurry",
-					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.9.2/Add-ons/GoogleAnalyticsServicesiOS_3.06",
-					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.9.2",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.12.2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
 				WRAPPER_EXTENSION = app;
 			};
@@ -706,6 +849,7 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Tamer Alaa";
 				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -728,26 +872,101 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "SMS Dubai Roads/SMS Dubai Roads.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Tamer Alaa";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tamer Alaa (6VJ733SKX8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
 				INFOPLIST_FILE = "SMS Dubai Roads/SMS Dubai Roads-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
-					copy,
 					"$(PROJECT_DIR)/Flurry",
-					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.9.2/Add-ons/GoogleAnalyticsServicesiOS_3.06",
-					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.9.2",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.12.2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D9FEA7C-A7FB-4E8F-A8B2-6E607461DA65";
 				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		69A22B921A17D00D004DB312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_ENTITLEMENTS = Traffic_Widget/Traffic_Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Traffic_Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69A22B931A17D00D004DB312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_ENTITLEMENTS = Traffic_Widget/Traffic_Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Traffic_Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		69A22B941A17D00D004DB312 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_ENTITLEMENTS = Traffic_Widget/Traffic_Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Tamer Alaa";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Traffic_Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 			};
 			name = "Ad Hoc";
 		};
@@ -773,6 +992,15 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		69A22B911A17D00D004DB312 /* Build configuration list for PBXNativeTarget "Traffic_Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A22B921A17D00D004DB312 /* Debug */,
+				69A22B931A17D00D004DB312 /* Release */,
+				69A22B941A17D00D004DB312 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
