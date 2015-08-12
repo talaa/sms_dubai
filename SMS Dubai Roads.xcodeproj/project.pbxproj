@@ -73,6 +73,7 @@
 		69A3C6A315FA91CE00CABD7B /* icon_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C6A115FA91CE00CABD7B /* icon_settings.png */; };
 		69CBDEA817FB19720076988A /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69CBDEA617FB19720076988A /* History.xcdatamodeld */; };
 		69F86B991AE1808400F265E5 /* libFlurry_6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F86B981AE1808400F265E5 /* libFlurry_6.3.0.a */; };
+		F5993C621B7B9ACD00F23F68 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5993C611B7B9ACD00F23F68 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +222,7 @@
 		69CBDEA717FB19720076988A /* History.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = History.xcdatamodel; sourceTree = "<group>"; };
 		69F86B971AE1808400F265E5 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		69F86B981AE1808400F265E5 /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
+		F5993C611B7B9ACD00F23F68 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,30 +230,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				692B39F91696F4FE005B1403 /* libz.dylib in Frameworks */,
+				692B39F31696F4C0005B1403 /* AVFoundation.framework in Frameworks */,
+				F5993C621B7B9ACD00F23F68 /* CoreMedia.framework in Frameworks */,
+				692B39FD1696F55B005B1403 /* QuartzCore.framework in Frameworks */,
+				692B3BE61698CD8C005B1403 /* AdSupport.framework in Frameworks */,
+				692B3BE41698CD76005B1403 /* StoreKit.framework in Frameworks */,
+				692FA39115CD8E65008D5421 /* CoreGraphics.framework in Frameworks */,
+				692E8AA5166EAD0C0010C2A4 /* SystemConfiguration.framework in Frameworks */,
+				69945E05194E2C77004CD5CF /* CoreTelephony.framework in Frameworks */,
 				69A22B7B1A1601A7004DB312 /* EventKit.framework in Frameworks */,
 				69A22B7C1A1601A7004DB312 /* EventKitUI.framework in Frameworks */,
-				692B39F31696F4C0005B1403 /* AVFoundation.framework in Frameworks */,
-				692B3BE61698CD8C005B1403 /* AdSupport.framework in Frameworks */,
-				69945E05194E2C77004CD5CF /* CoreTelephony.framework in Frameworks */,
 				696304DE180ECF9C00067AE8 /* Security.framework in Frameworks */,
 				696A137C1800827400BDC345 /* CoreData.framework in Frameworks */,
 				69F86B991AE1808400F265E5 /* libFlurry_6.3.0.a in Frameworks */,
-				692B3BE41698CD76005B1403 /* StoreKit.framework in Frameworks */,
-				692B39FD1696F55B005B1403 /* QuartzCore.framework in Frameworks */,
 				692B39FB1696F50A005B1403 /* MapKit.framework in Frameworks */,
-				692B39F91696F4FE005B1403 /* libz.dylib in Frameworks */,
 				692B39F71696F4F3005B1403 /* libsqlite3.dylib in Frameworks */,
 				692B39F51696F4D2005B1403 /* CoreLocation.framework in Frameworks */,
 				69A22B771A160183004DB312 /* libGoogleAdMobAds.a in Frameworks */,
 				692B39F11696F4B2005B1403 /* AudioToolbox.framework in Frameworks */,
 				692B39EE1696F4A0005B1403 /* AddressBook.framework in Frameworks */,
 				69503A45169627C1001E1939 /* iAd.framework in Frameworks */,
-				692E8AA5166EAD0C0010C2A4 /* SystemConfiguration.framework in Frameworks */,
 				692FA3C415CDAE31008D5421 /* MessageUI.framework in Frameworks */,
 				692FA38D15CD8E65008D5421 /* UIKit.framework in Frameworks */,
 				6959EC351A9621D700A082F4 /* StartApp.framework in Frameworks */,
 				692FA38F15CD8E65008D5421 /* Foundation.framework in Frameworks */,
-				692FA39115CD8E65008D5421 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +313,7 @@
 		692FA38B15CD8E65008D5421 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5993C611B7B9ACD00F23F68 /* CoreMedia.framework */,
 				69A22B791A1601A7004DB312 /* EventKit.framework */,
 				69A22B7A1A1601A7004DB312 /* EventKitUI.framework */,
 				69945E04194E2C77004CD5CF /* CoreTelephony.framework */,
@@ -815,6 +819,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Flurry/StartApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
@@ -846,6 +851,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Flurry/StartApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";
@@ -915,6 +921,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Flurry/StartApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS Dubai Roads/SMS Dubai Roads-Prefix.pch";

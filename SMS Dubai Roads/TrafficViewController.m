@@ -27,13 +27,28 @@
     [trafficwebview loadHTMLString:htmlString baseURL:nil];
     [self Showanotherad];
     [Flurry logEvent:@"TrafficView" timed:YES];
-    
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if (bannerView == nil) {
+        bannerView = [[STABannerView alloc] initWithSize:STA_AutoAdSize autoOrigin:STAAdOrigin_Bottom
+                                                withView:self.view withDelegate:nil];
+        [self.view addSubview:bannerView];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//if app supports IOS 8
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [bannerView viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+}
+/*
 -(void)showad{
     AdBanner = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
     
@@ -57,19 +72,18 @@
 
 
 }
+  */
 -(void)Showanotherad{
 
     if (bannerView == nil) {
-        bannerView = [[STABannerView alloc] initWithSize:STA_AutoAdSize  origin:CGPointMake(0, self.view.frame.size.height - 100)
+        bannerView = [[STABannerView alloc] initWithSize:STA_AutoAdSize  origin:CGPointMake(0,self.view.frame.size.height - 100)
                                                 withView:self.view withDelegate:nil];
         [bannerView setAutoresizesSubviews:YES];
         bannerView.autoresizingMask=UIViewAutoresizingFlexibleWidth;
         [self.view addSubview:bannerView];
     }
-    
-
-
 }
+
 /*
 #pragma mark - Navigation
 

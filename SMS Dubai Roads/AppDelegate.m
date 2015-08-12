@@ -42,6 +42,12 @@
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButton forState:UIControlStateNormal
                                                     barMetrics:UIBarMetricsDefault];
      */
+    
+    // initialize the SDK with your appID
+    STAStartAppSDK* sdkStartApp = [STAStartAppSDK sharedInstance];
+    sdkStartApp.appID = @"207572839";
+    
+    
     [Flurry startSession:@"RJK3MM5PRZ4VDTS74QPX"];
     [Flurry setCrashReportingEnabled:YES];
     [Flurry logPageView];

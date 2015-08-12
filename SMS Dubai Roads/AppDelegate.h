@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Tamer Alaa. All rights reserved.
 //
 
+#import <StartApp/StartApp.h> //For StartApp
 #import <UIKit/UIKit.h>
 #define KRated @"isalreadyrated"
 #define KPROUprade @"isProversionpurchased"

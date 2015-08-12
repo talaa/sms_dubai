@@ -11,8 +11,9 @@
 #import "GADBannerView.h"
 #import <StartApp/StartApp.h>
 
-@interface TrafficViewController : UIViewController{
-GADBannerView *AdBanner;
+@interface TrafficViewController : UIViewController <STADelegateProtocol>
+{
+    GADBannerView *AdBanner;
     STABannerView *bannerView;
 }
 @property (nonatomic,strong)IBOutlet UIWebView *trafficwebview;
