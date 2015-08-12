@@ -10,13 +10,16 @@
 #import "Flurry.h"
 #import "AppDelegate.h"
 #define KPhonetest @"Phonetest"
-#define AdID @"ca-app-pub-9978956748838024/7419739152"
+#define AdID @"ca-app-pub-8416350468865222/5854359598"
+
+
 @interface DubaiParkingViewController ()
+@property (nonatomic)NSArray *carplates;
 
 @end
 
 @implementation DubaiParkingViewController
-@synthesize carplatenumber,ParkingAreano,Parkinghourslabel,addhours,smscontext,managedObjectContext,gotohistory,sendsms;
+@synthesize carplatenumber,ParkingAreano,Parkinghourslabel,addhours,smscontext,managedObjectContext,gotohistory,sendsms,carplates;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,6 +41,17 @@
     [sendsms.layer setCornerRadius:20.0f];
     [sendsms.layer setMasksToBounds:YES];
 	// Do any additional setup after loading the view.
+    ///Start App Part
+    
+    if (bannerView == nil) {
+        bannerView = [[STABannerView alloc] initWithSize:STA_AutoAdSize  origin:CGPointMake(0, self.view.frame.size.height - 100) 
+                                                withView:self.view withDelegate:nil];
+        //[bannerView setAutoresizesSubviews:YES];
+        //bannerView.autoresizingMask=UIViewAutoresizingFlexibleWidth;
+        [self.view addSubview:bannerView];
+    }
+    
+    /*
     // Create a view of the standard size at the top of the screen.
     // Available AdSize constants are explained in GADAdSize.h.
     AdBanner = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
@@ -57,12 +71,13 @@
     
     // Initiate a generic request to load it with an ad.
     [AdBanner loadRequest:[GADRequest request]];
-
+*/
     if (managedObjectContext == nil)
     {
         managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
         NSLog(@"After managedObjectContext: %@",  managedObjectContext);
     }
+    [self changethecarplate];
 }
 
 
@@ -73,10 +88,35 @@
         NSLog(@"This is the First entry%@",[defaults objectForKey:KCarPlateNo]);
     }
     [carplatenumber setText:[defaults objectForKey:KCarPlateNo]];
+    NSString *item1=[[NSString alloc]init];
+    NSString *item2=[[NSString alloc]init];
+    if ([defaults objectForKey:KCarPlateNo]==nil) {
+        item1=KCarPlateNo;
+    }else{
+        item1=[defaults objectForKey:KCarPlateNo];
     
+    }
+    if ([defaults objectForKey:KCar2PlateNo]==nil) {
+        item2=KCar2PlateNo;
+    }else{
+        item2=[defaults objectForKey:KCar2PlateNo];
+        
+    }
+    carplates=@[item1,item2];
     
 }
+-(void)changethecarplate{
+    [self.carplatenumber resignFirstResponder];
+    UIPickerView *picker1 = [[UIPickerView alloc] init];
+    //NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    picker1.dataSource = self;
+    picker1.delegate = self;
+    picker1.showsSelectionIndicator=YES;
+    self.carplatenumber.inputView=picker1;
+    [self Updatesms];
+    NSLog(@"I am here & done ");
 
+}
 -(IBAction)updatehours:(id)sender{
     
     Parkinghourslabel.text=[NSString stringWithFormat:@"%0.0f",addhours.value];
@@ -151,6 +191,40 @@
 {
     [self Updatesms];
     [sender resignFirstResponder];
+}
+
+
+//Prepare th UI
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return [carplates count];
+    
+}
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return  1;
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    
+    
+    return carplates[row];
+    
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    
+        self.carplatenumber.text = carplates[row];
+        
+    
+    [self.carplatenumber resignFirstResponder];
+    
+    
+}
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    //STAStartAppSDK* sdk = [STAStartAppSDK sharedInstance];
+    //[startAppAd loadAdWithAdPreferences:[STAAdPreferences prefrencesWithLatitude:37.3190383911 andLongitude:-121.96269989]];
 }
 
 @end

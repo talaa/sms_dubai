@@ -19,8 +19,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let bundle = NSBundle.mainBundle()
         let pathhtml = bundle.pathForResource("trafficmap", ofType: "html")
         println(pathhtml)
-        let content = String.stringWithContentsOfFile(pathhtml!,encoding: NSUTF8StringEncoding, error: nil)
-        trafficwidgetview.layer.cornerRadius=30.0
+        let content=String(contentsOfFile: pathhtml!, encoding: NSUTF8StringEncoding, error: nil)
+        //let content = String.stringWithContentsOfFile(pathhtml!,encoding: NSUTF8StringEncoding, error: nil)
+        trafficwidgetview.layer.cornerRadius=50.0
         trafficwidgetview.clipsToBounds=true
 
         //let htmlfile = bundle.pathForResource("googlemaps", ofType: "hmtl")

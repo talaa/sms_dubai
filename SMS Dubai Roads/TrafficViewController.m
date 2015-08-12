@@ -7,7 +7,7 @@
 //
 
 #import "TrafficViewController.h"
-#define AdID @"ca-app-pub-9978956748838024/7419739152"
+#define AdID @"ca-app-pub-8416350468865222/5854359598"
 @interface TrafficViewController ()
 
 @end
@@ -25,7 +25,7 @@
     NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"googlemaps" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     [trafficwebview loadHTMLString:htmlString baseURL:nil];
-    [self showad];
+    [self Showanotherad];
     [Flurry logEvent:@"TrafficView" timed:YES];
     
 }
@@ -48,11 +48,25 @@
                                   self.view.frame.size.height-AdBanner.bounds.size.height-50,
                                   AdBanner.bounds.size.width,
                                   AdBanner.bounds.size.height)];
+    
     [self.view addSubview:AdBanner];
     
     // Initiate a generic request to load it with an ad.
     [AdBanner loadRequest:[GADRequest request]];
 
+
+
+}
+-(void)Showanotherad{
+
+    if (bannerView == nil) {
+        bannerView = [[STABannerView alloc] initWithSize:STA_AutoAdSize  origin:CGPointMake(0, self.view.frame.size.height - 100)
+                                                withView:self.view withDelegate:nil];
+        [bannerView setAutoresizesSubviews:YES];
+        bannerView.autoresizingMask=UIViewAutoresizingFlexibleWidth;
+        [self.view addSubview:bannerView];
+    }
+    
 
 
 }

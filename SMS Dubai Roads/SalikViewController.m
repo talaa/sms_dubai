@@ -9,7 +9,7 @@
 #import "SalikViewController.h"
 #import "Flurry.h"
 #import "AppDelegate.h"
-#define AdID @"ca-app-pub-9978956748838024/7419739152"
+#define AdID @"ca-app-pub-8416350468865222/5854359598"
 @interface SalikViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *valuecontrol;
 @property (weak, nonatomic) IBOutlet UITextField *salikvalue;
@@ -127,6 +127,8 @@
     [sendsms.layer setCornerRadius:20.0f];
     [sendsms.layer setMasksToBounds:YES];
 	// Do any additional setup after loading the view.
+    
+    /*
     // Create a view of the standard size at the top of the screen.
     // Available AdSize constants are explained in GADAdSize.h.
     adBanner = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
@@ -148,7 +150,15 @@
     // Initiate a generic request to load it with an ad.
     
     [adBanner loadRequest:[GADRequest request]];
-    
+    */
+    if (bannerView == nil) {
+        
+        bannerView = [[STABannerView alloc] initWithSize:STA_AutoAdSize  origin:CGPointMake(0, self.view.frame.size.height - 100)
+                                                withView:self.view withDelegate:nil];
+        [bannerView setAutoresizesSubviews:YES];
+        bannerView.autoresizingMask=(UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleLeftMargin);
+        [self.view addSubview:bannerView];
+    }
     if (managedObjectContext == nil)
     {
         managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];

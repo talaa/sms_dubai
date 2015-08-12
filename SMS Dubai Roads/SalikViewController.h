@@ -11,13 +11,14 @@
 #import <iAd/iAd.h>
 #import <QuartzCore/QuartzCore.h>
 #import "GADBannerView.h"
+#import <StartApp/StartApp.h>
 #define KSalikAccountNo @"Salik Account No:"
 #define KSalikPINNo @"Salik Pin No:"
 #define KPhonetest @"Phonetest"
 @interface SalikViewController : UIViewController<MFMessageComposeViewControllerDelegate>{
 
 //GADBannerView *adBanner;
-
+    STABannerView *bannerView;
 }
 @property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic,retain) IBOutlet UITextField *accountnumber;

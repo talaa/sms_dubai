@@ -13,7 +13,7 @@
 @end
 
 @implementation DefaultsViewController
-@synthesize accountnumberdef,pinnumberdef,carplatenumberdef;
+@synthesize accountnumberdef,pinnumberdef,carplatenumberdef,car2platenumberdef;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,9 +28,13 @@
     [userdefault setObject:accountnumberdef.text forKey:KSalikAccountNo];
     [userdefault setObject:pinnumberdef.text forKey:KSalikPINNo];
     [userdefault setObject:carplatenumberdef.text forKey:KCarPlateNo];
+    [userdefault setObject:car2platenumberdef.text forKey:KCar2PlateNo];
     //[userdefault setObject:Phonetestfield.text forKey:KPhonetest];
     
     [sender resignFirstResponder];
+    UIAlertView *savemessage=[[UIAlertView alloc]initWithTitle:@" Details Saved" message:@"All Details Have been Saved & can be accessed from preferences window" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [savemessage show];
+    //[self dismissViewControllerAnimated:YES completion:nil];
 }
 -(void)Fillingthedefaults{
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
@@ -49,6 +53,10 @@
         NSLog(@"This is the First entry%@",[defaults objectForKey:KCarPlateNo]);
     }
     [carplatenumberdef setText:[defaults objectForKey:KCarPlateNo]];
+    if ([[defaults objectForKey:KCar2PlateNo] isEqualToString:@""]){
+        NSLog(@"This is the First entry%@",[defaults objectForKey:KCar2PlateNo]);
+    }
+    [car2platenumberdef setText:[defaults objectForKey:KCar2PlateNo]];
     /*
     if ([[defaults objectForKey:KPhonetest] isEqualToString:@""]){
         NSLog(@"This is the First entry%@",[defaults objectForKey:KPhonetest]);

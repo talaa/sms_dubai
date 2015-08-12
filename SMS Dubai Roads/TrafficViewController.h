@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "Flurry.h"
 #import "GADBannerView.h"
+#import <StartApp/StartApp.h>
 
 @interface TrafficViewController : UIViewController{
 GADBannerView *AdBanner;
+    STABannerView *bannerView;
 }
 @property (nonatomic,strong)IBOutlet UIWebView *trafficwebview;
 

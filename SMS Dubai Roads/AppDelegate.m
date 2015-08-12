@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "Flurry.h"
+#import <StartApp/StartApp.h>
+
+#define DevID @"102387467"
+#define AppID @"202872110"
+
 @implementation UINavigationBar (UINavigationBarCustomDraw)
 
 - (void)drawRect:(CGRect)rect
@@ -41,6 +46,10 @@
     [Flurry setCrashReportingEnabled:YES];
     [Flurry logPageView];
    
+    STAStartAppSDK* sdk = [STAStartAppSDK sharedInstance];
+    sdk.devID = DevID;
+    sdk.appID = AppID;
+    
     return YES;
 }
 

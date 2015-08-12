@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #define KSalikAccountNo @"Salik Account No:"
 #define KSalikPINNo @"Salik Pin No:"
-#define KCarPlateNo @"Car Plate No:"
+#define KCarPlateNo @"Car 1 Plate No:"
+#define KCar2PlateNo @"Car 2 Plate No:"
 #define KPhonetest @"Phonetest"
 
 @interface DefaultsViewController : UITableViewController
@@ -17,6 +18,7 @@
 @property (nonatomic,retain) IBOutlet UITextField *accountnumberdef;
 @property (nonatomic,retain) IBOutlet UITextField *pinnumberdef;
 @property (nonatomic,retain) IBOutlet UITextField *carplatenumberdef;
+@property (nonatomic,retain) IBOutlet UITextField *car2platenumberdef;
 //@property (nonatomic,retain) IBOutlet UITextField *Phonetestfield;
 
 @end
