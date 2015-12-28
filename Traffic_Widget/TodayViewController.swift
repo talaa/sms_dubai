@@ -11,6 +11,7 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var trafficwidgetview: UIWebView!
+    var content:String!
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +19,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         //NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"googlemaps" ofType:@"html"];
         let bundle = NSBundle.mainBundle()
         let pathhtml = bundle.pathForResource("trafficmap", ofType: "html")
-        println(pathhtml)
-        let content=String(contentsOfFile: pathhtml!, encoding: NSUTF8StringEncoding, error: nil)
+        print(pathhtml)
+        do{
+            content = try String(contentsOfFile: pathhtml!, encoding: NSUTF8StringEncoding)
+        }catch{
+            print(error)
+        }
+        
+        
         //let content = String.stringWithContentsOfFile(pathhtml!,encoding: NSUTF8StringEncoding, error: nil)
         trafficwidgetview.layer.cornerRadius=50.0
         trafficwidgetview.clipsToBounds=true
@@ -36,7 +43,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
+    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
 
         // If an error is encountered, use NCUpdateResult.Failed
