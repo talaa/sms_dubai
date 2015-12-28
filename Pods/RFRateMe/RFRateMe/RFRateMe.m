@@ -9,7 +9,7 @@
 #import "RFRateMe.h"
 #import "UIAlertView+NSCookbook.h"
 
-#define kNumberOfDaysUntilShowAgain 3
+#define kNumberOfDaysUntilShowAgain 1
 #define kAppStoreAddress @"https://itunes.apple.com/ae/app/sms-roads/id560600154?mt=8"
 #define kAppName @"SMS Roads"
 
