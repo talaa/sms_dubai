@@ -1,0 +1,10 @@
+PODS:
+  - RFRateMe (1.0.0)
+
+DEPENDENCIES:
+  - RFRateMe (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  RFRateMe: 07fbc459799535254db3bd221e930817e8c8ffff
+
+COCOAPODS: 0.39.0

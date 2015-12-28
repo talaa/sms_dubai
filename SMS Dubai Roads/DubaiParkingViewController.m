@@ -8,6 +8,7 @@
 
 #import "DubaiParkingViewController.h"
 #import "Flurry.h"
+#import "RFRateMe.h"
 #import "AppDelegate.h"
 #define KPhonetest @"Phonetest"
 #define AdID @"ca-app-pub-8416350468865222/5854359598"
@@ -139,6 +140,8 @@
     [picker setRecipients:receipents];
     [self presentViewController:picker animated:YES completion:nil];
     //[self presentModalViewController:picker animated:YES];
+    
+    [RFRateMe showRateAlert];
     [Flurry logEvent:@"Parking Recharge"];
     
     

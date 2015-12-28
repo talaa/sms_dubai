@@ -9,6 +9,7 @@
 #import "SalikViewController.h"
 #import "Flurry.h"
 #import "AppDelegate.h"
+#import "RFRateMe.h"
 #define AdID @"ca-app-pub-8416350468865222/5854359598"
 @interface SalikViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *valuecontrol;
@@ -69,6 +70,7 @@
     [self presentViewController:picker animated:YES completion:nil];
     //[self presentModalViewController:picker animated:YES];
     
+    [RFRateMe showRateAlert];
     [Flurry logEvent:@"Salik Recharge"];
     
 

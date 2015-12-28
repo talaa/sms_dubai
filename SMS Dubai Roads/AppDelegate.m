@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "Flurry.h"
 #import <StartApp/StartApp.h>
-
+#import "RFRateMe.h"
 #define DevID @"102387467"
 #define AppID @"202872110"
 
@@ -113,7 +113,7 @@
     
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
-        _managedObjectContext = [[NSManagedObjectContext alloc] init];
+        _managedObjectContext = [[NSManagedObjectContext alloc]initWithConcurrencyType:NSMainQueueConcurrencyType];
         [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     }
     return _managedObjectContext;

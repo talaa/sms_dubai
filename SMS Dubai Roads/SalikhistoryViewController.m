@@ -113,7 +113,7 @@
 
 - (NSFetchedResultsController *)fetchedResultsController
 {
-    NSManagedObjectContext *context=[[NSManagedObjectContext alloc]init];
+    NSManagedObjectContext *context=[[NSManagedObjectContext alloc]initWithConcurrencyType:NSMainQueueConcurrencyType];
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
     context = [appDelegate managedObjectContext];
     if (_fetchedResultsController != nil) {

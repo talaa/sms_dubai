@@ -73,6 +73,7 @@
 		69A3C6A315FA91CE00CABD7B /* icon_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3C6A115FA91CE00CABD7B /* icon_settings.png */; };
 		69CBDEA817FB19720076988A /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69CBDEA617FB19720076988A /* History.xcdatamodeld */; };
 		69F86B991AE1808400F265E5 /* libFlurry_6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F86B981AE1808400F265E5 /* libFlurry_6.3.0.a */; };
+		EAE29FF5E4C7473232A7E696 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DD8CCD0C8202408242DBBC /* libPods.a */; };
 		F5993C621B7B9ACD00F23F68 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5993C611B7B9ACD00F23F68 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		24DD8CCD0C8202408242DBBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BBE276F980BF3BB3FD81010 /* Pods.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.ad hoc.xcconfig"; sourceTree = "<group>"; };
+		5B9376EA9584D5AFD25FE90A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		692582E71A113AB200643A08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		692B39ED1696F4A0005B1403 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		692B39F01696F4B2005B1403 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -222,6 +226,7 @@
 		69CBDEA717FB19720076988A /* History.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = History.xcdatamodel; sourceTree = "<group>"; };
 		69F86B971AE1808400F265E5 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		69F86B981AE1808400F265E5 /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
+		9DE11E8F6BC0C86E5735946E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F5993C611B7B9ACD00F23F68 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -255,6 +260,7 @@
 				692FA38D15CD8E65008D5421 /* UIKit.framework in Frameworks */,
 				6959EC351A9621D700A082F4 /* StartApp.framework in Frameworks */,
 				692FA38F15CD8E65008D5421 /* Foundation.framework in Frameworks */,
+				EAE29FF5E4C7473232A7E696 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +304,7 @@
 				69A22B841A17D00C004DB312 /* Traffic_Widget */,
 				692FA38B15CD8E65008D5421 /* Frameworks */,
 				692FA38915CD8E65008D5421 /* Products */,
+				C9E4DF4020C9D3D94EAE0FFA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -336,6 +343,7 @@
 				692FA38E15CD8E65008D5421 /* Foundation.framework */,
 				692FA39015CD8E65008D5421 /* CoreGraphics.framework */,
 				69A22B821A17D00C004DB312 /* NotificationCenter.framework */,
+				24DD8CCD0C8202408242DBBC /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -535,6 +543,16 @@
 			path = Flurry;
 			sourceTree = "<group>";
 		};
+		C9E4DF4020C9D3D94EAE0FFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DE11E8F6BC0C86E5735946E /* Pods.debug.xcconfig */,
+				5B9376EA9584D5AFD25FE90A /* Pods.release.xcconfig */,
+				2BBE276F980BF3BB3FD81010 /* Pods.ad hoc.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -542,10 +560,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 692FA3B115CD8E66008D5421 /* Build configuration list for PBXNativeTarget "SMS Dubai Roads" */;
 			buildPhases = (
+				0F4C54C664BB317B548DBE97 /* Check Pods Manifest.lock */,
 				692FA38415CD8E65008D5421 /* Sources */,
 				692FA38515CD8E65008D5421 /* Frameworks */,
 				692FA38615CD8E65008D5421 /* Resources */,
 				69A22B8D1A17D00C004DB312 /* Embed App Extensions */,
+				AC0C50F3EEB4FF1B1CB0BC8B /* Embed Pods Frameworks */,
+				8138D2AA11CE3CC8CCF5BDB6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -662,6 +683,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F4C54C664BB317B548DBE97 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8138D2AA11CE3CC8CCF5BDB6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC0C50F3EEB4FF1B1CB0BC8B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		692FA38415CD8E65008D5421 /* Sources */ = {
@@ -810,6 +879,7 @@
 		};
 		692FA3B215CD8E66008D5421 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DE11E8F6BC0C86E5735946E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -833,7 +903,10 @@
 					"$(PROJECT_DIR)/Flurry-iOS-6.0.0/Flurry",
 					"$(PROJECT_DIR)/Flurry-iOS-6.0.0/FlurryAds",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -843,6 +916,7 @@
 		};
 		692FA3B315CD8E66008D5421 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9376EA9584D5AFD25FE90A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -866,7 +940,10 @@
 					"$(PROJECT_DIR)/Flurry-iOS-6.0.0/Flurry",
 					"$(PROJECT_DIR)/Flurry-iOS-6.0.0/FlurryAds",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -913,6 +990,7 @@
 		};
 		692FA3CD15CDD395008D5421 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BBE276F980BF3BB3FD81010 /* Pods.ad hoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -937,7 +1015,10 @@
 					"$(PROJECT_DIR)/Flurry-iOS-6.0.0/Flurry",
 					"$(PROJECT_DIR)/Flurry-iOS-6.0.0/FlurryAds",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "7f83ddf9-cdc7-49da-9b5d-585e8787e80c";

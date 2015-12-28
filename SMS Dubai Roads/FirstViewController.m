@@ -50,8 +50,9 @@
         //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:130-032-2837"]]];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:Phone]];
     } else {
-        UIAlertView *Notpermitted=[[UIAlertView alloc] initWithTitle:@"Alert" message:@"Your device doesn't support this feature." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [Notpermitted show];
+        UIAlertController *alertcontroller = [UIAlertController alertControllerWithTitle:@"Alert" message:@"Your device doesn't support this feature." preferredStyle:UIAlertControllerStyleAlert];
+        [alertcontroller addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alertcontroller animated:YES completion:nil];
         
     }
 }

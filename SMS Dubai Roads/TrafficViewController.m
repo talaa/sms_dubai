@@ -5,7 +5,7 @@
 //  Created by Tamer Alaa on 11/12/14.
 //  Copyright (c) 2014 Tamer Alaa. All rights reserved.
 //
-
+#import "RFRateMe.h"
 #import "TrafficViewController.h"
 #define AdID @"ca-app-pub-8416350468865222/5854359598"
 @interface TrafficViewController ()
@@ -20,12 +20,16 @@
     //NSString *webaddress=@"";
     //NSURLRequest *urlrequest=[[NSURLRequest alloc]initWithURL:[NSURL URLWithString:webaddress]];
     //[trafficwebview loadRequest:urlrequest];
-    UIAlertView *checkconnection=[[UIAlertView alloc]initWithTitle:@"Internet connection" message:@"This Service Requires Internet connection" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    [checkconnection show];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Internet connection" message:@"This Service Requires Internet connection" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
     NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"googlemaps" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     [trafficwebview loadHTMLString:htmlString baseURL:nil];
     [self Showanotherad];
+    
+    [RFRateMe showRateAlert];
     [Flurry logEvent:@"TrafficView" timed:YES];
 }
 

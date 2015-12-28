@@ -8,6 +8,7 @@
 
 #import "UpgradeViewController.h"
 #import "Flurry.h"
+#import "RFRateMe.h"
 #define kInAppPurchaseProUpgradeProductId @"6VJ733SKX8.com.springmoon.SMSDubaiRoads.upgrade"
 //#define kInAppPurchaseProUpgradeProductId @"com.springmoon.Shoplog.upgrade"
 @interface UpgradeViewController ()
@@ -30,10 +31,11 @@
 {
     NSUserDefaults *userdefaults =[NSUserDefaults standardUserDefaults];
     if (![userdefaults boolForKey:KRated]) {
-        UIAlertView *ratemeplease=[[UIAlertView alloc]initWithTitle:@"Rate me Please " message:@"If you like our App , Please Rate our App in the App Store " delegate:self cancelButtonTitle:@"Later" otherButtonTitles:@"Rate it", nil];
-        [ratemeplease show];
+//        UIAlertView *ratemeplease=[[UIAlertView alloc]initWithTitle:@"Rate me Please " message:@"If you like our App , Please Rate our App in the App Store " delegate:self cancelButtonTitle:@"Later" otherButtonTitles:@"Rate it", nil];
+//        [ratemeplease show];
         
-        
+        // (Show the alert)
+        [RFRateMe showRateAlert];
     }
     self.view.backgroundColor = [UIColor orangeColor];
     if ([SKPaymentQueue canMakePayments]) {
@@ -52,22 +54,22 @@
 	// Do any additional setup after loading the view.
 }
 
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    NSLog(@"The button Pressed is %ld",(long)buttonIndex);
-    if (buttonIndex==1) {
-        NSString *link=@"https://itunes.apple.com/us/app/sms-roads/id560600154?ls=1&mt=8";
-        //NSString *link=@"http://www.google.com";
-        
-        //NSString *urlString = [NSString stringWithFormat:@"http://maps.google.com/maps?q=%@, Anchorage, AK",addressString];
-        NSString *escaped = [link stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:escaped]];
-        //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/shoplog/id557686446?ls=1&mt=8"]];
-
-        NSLog(@"I will got to the app storee");
-        //[self performSegueWithIdentifier:@"upgrade" sender:self];
-    }
-    
-}
+//-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+//    NSLog(@"The button Pressed is %ld",(long)buttonIndex);
+//    if (buttonIndex==1) {
+//        NSString *link=@"https://itunes.apple.com/us/app/sms-roads/id560600154?ls=1&mt=8";
+//        //NSString *link=@"http://www.google.com";
+//        
+//        //NSString *urlString = [NSString stringWithFormat:@"http://maps.google.com/maps?q=%@, Anchorage, AK",addressString];
+//        NSString *escaped = [link stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:escaped]];
+//        //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/shoplog/id557686446?ls=1&mt=8"]];
+//
+//        NSLog(@"I will got to the app storee");
+//        //[self performSegueWithIdentifier:@"upgrade" sender:self];
+//    }
+//    
+//}
 
 -(IBAction)buyproduct:(id)sender{
 
@@ -77,10 +79,6 @@
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
     NSLog(@"I made the payments");
-
-    
-    
-
 }
 
 - (IBAction)restoreaction:(id)sender {

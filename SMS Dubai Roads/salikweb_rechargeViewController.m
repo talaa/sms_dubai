@@ -8,6 +8,7 @@
 
 #import "salikweb_rechargeViewController.h"
 #import "Flurry.h"
+#import "RFRateMe.h"
 
 @interface salikweb_rechargeViewController ()
 
@@ -53,10 +54,12 @@
 */
 
 - (IBAction)rechargecard:(id)sender {
+    [RFRateMe showRateAlert];
     [Flurry logEvent:@"Salik Recharge cards" timed:YES];
 }
 
 - (IBAction)salikweb:(id)sender {
+    [RFRateMe showRateAlert];
     [Flurry logEvent:@"Salik Recharge web" timed:YES];
 }
 @end
