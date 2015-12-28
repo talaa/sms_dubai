@@ -36,8 +36,6 @@
 		692FA3C615CDB8C3008D5421 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 692FA3C515CDB8C3008D5421 /* Icon.png */; };
 		693A8D75180C1BE400F70C7C /* UpgradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693A8D74180C1BE400F70C7C /* UpgradeViewController.m */; };
 		69503A45169627C1001E1939 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69503A44169627C1001E1939 /* iAd.framework */; };
-		6959EC351A9621D700A082F4 /* StartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6959EC331A9621D600A082F4 /* StartApp.framework */; };
-		6959EC361A9621D700A082F4 /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6959EC341A9621D600A082F4 /* StartApp.bundle */; };
 		696304DE180ECF9C00067AE8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696304DD180ECF9C00067AE8 /* Security.framework */; };
 		696304E1180EE95E00067AE8 /* salikhistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 696304E0180EE95E00067AE8 /* salikhistoryCell.m */; };
 		696304E418106C2D00067AE8 /* ParkinghistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 696304E318106C2D00067AE8 /* ParkinghistoryCell.m */; };
@@ -74,6 +72,8 @@
 		69CBDEA817FB19720076988A /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69CBDEA617FB19720076988A /* History.xcdatamodeld */; };
 		69F86B991AE1808400F265E5 /* libFlurry_6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F86B981AE1808400F265E5 /* libFlurry_6.3.0.a */; };
 		EAE29FF5E4C7473232A7E696 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DD8CCD0C8202408242DBBC /* libPods.a */; };
+		F53E9CA61C31A21500BE91BD /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F53E9CA41C31A21500BE91BD /* StartApp.bundle */; };
+		F53E9CA71C31A21500BE91BD /* StartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53E9CA51C31A21500BE91BD /* StartApp.framework */; };
 		F5993C621B7B9ACD00F23F68 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5993C611B7B9ACD00F23F68 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
@@ -151,8 +151,6 @@
 		693A8D73180C1BE400F70C7C /* UpgradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeViewController.h; sourceTree = "<group>"; };
 		693A8D74180C1BE400F70C7C /* UpgradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpgradeViewController.m; sourceTree = "<group>"; };
 		69503A44169627C1001E1939 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		6959EC331A9621D600A082F4 /* StartApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StartApp.framework; sourceTree = "<group>"; };
-		6959EC341A9621D600A082F4 /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
 		696304DD180ECF9C00067AE8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		696304DF180EE95E00067AE8 /* salikhistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = salikhistoryCell.h; sourceTree = "<group>"; };
 		696304E0180EE95E00067AE8 /* salikhistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = salikhistoryCell.m; sourceTree = "<group>"; };
@@ -227,6 +225,8 @@
 		69F86B971AE1808400F265E5 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		69F86B981AE1808400F265E5 /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
 		9DE11E8F6BC0C86E5735946E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F53E9CA41C31A21500BE91BD /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
+		F53E9CA51C31A21500BE91BD /* StartApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StartApp.framework; sourceTree = "<group>"; };
 		F5993C611B7B9ACD00F23F68 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -248,6 +248,7 @@
 				69A22B7C1A1601A7004DB312 /* EventKitUI.framework in Frameworks */,
 				696304DE180ECF9C00067AE8 /* Security.framework in Frameworks */,
 				696A137C1800827400BDC345 /* CoreData.framework in Frameworks */,
+				F53E9CA71C31A21500BE91BD /* StartApp.framework in Frameworks */,
 				69F86B991AE1808400F265E5 /* libFlurry_6.3.0.a in Frameworks */,
 				692B39FB1696F50A005B1403 /* MapKit.framework in Frameworks */,
 				692B39F71696F4F3005B1403 /* libsqlite3.dylib in Frameworks */,
@@ -258,7 +259,6 @@
 				69503A45169627C1001E1939 /* iAd.framework in Frameworks */,
 				692FA3C415CDAE31008D5421 /* MessageUI.framework in Frameworks */,
 				692FA38D15CD8E65008D5421 /* UIKit.framework in Frameworks */,
-				6959EC351A9621D700A082F4 /* StartApp.framework in Frameworks */,
 				692FA38F15CD8E65008D5421 /* Foundation.framework in Frameworks */,
 				EAE29FF5E4C7473232A7E696 /* libPods.a in Frameworks */,
 			);
@@ -410,8 +410,8 @@
 		6959EC321A9621A300A082F4 /* StartApp */ = {
 			isa = PBXGroup;
 			children = (
-				6959EC331A9621D600A082F4 /* StartApp.framework */,
-				6959EC341A9621D600A082F4 /* StartApp.bundle */,
+				F53E9CA41C31A21500BE91BD /* StartApp.bundle */,
+				F53E9CA51C31A21500BE91BD /* StartApp.framework */,
 			);
 			name = StartApp;
 			sourceTree = "<group>";
@@ -656,7 +656,7 @@
 				69A3C69C15FA8ECD00CABD7B /* Default@2x.png in Resources */,
 				69A3C69F15FA8EF900CABD7B /* Default.png in Resources */,
 				69A3C6A215FA91CE00CABD7B /* icon_mail.png in Resources */,
-				6959EC361A9621D700A082F4 /* StartApp.bundle in Resources */,
+				F53E9CA61C31A21500BE91BD /* StartApp.bundle in Resources */,
 				69A3C6A315FA91CE00CABD7B /* icon_settings.png in Resources */,
 				692582E81A113AB200643A08 /* Images.xcassets in Resources */,
 				698B05C615FD266500A8E34C /* sendsmsbutton-263x37.png in Resources */,

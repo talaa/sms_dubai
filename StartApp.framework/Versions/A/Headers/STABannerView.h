@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 2.3.5
+//  SDK version 3.3.0
 
 #import <UIKit/UIKit.h>
 #import "STABannerSize.h"
@@ -15,6 +15,8 @@
 - (void) didDisplayBannerAd:(STABannerView*)banner;
 - (void) failedLoadBannerAd:(STABannerView*)banner withError:(NSError *)error;
 - (void) didClickBannerAd:(STABannerView*)banner;
+- (void) didCloseBannerInAppStore:(STABannerView*)banner;
+
 @end
 
 typedef enum {
@@ -26,6 +28,11 @@ typedef enum {
 
 - (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate;
 - (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate;
+
+- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag;
+- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag;
+
+- (void)setSTABannerAdTag:(NSString *) adTag;
 
 - (void)setSTABannerSize:(STABannerSize) size;
 - (void)setOrigin:(CGPoint) origin;
