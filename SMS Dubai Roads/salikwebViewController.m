@@ -8,7 +8,7 @@
 
 #import "salikwebViewController.h"
 
-@interface salikwebViewController ()
+@interface salikwebViewController () <UIWebViewDelegate>
 
 @end
 
@@ -26,9 +26,12 @@
 
 - (void)viewDidLoad
 {
-    NSURLRequest *urlrequest=[[NSURLRequest alloc]initWithURL:[NSURL URLWithString:@"https://customers.salik.ae/default.aspx?ReturnUrl=%2fModuleCustomer%2fMakePayment.aspx%3fculture%3deng&culture=eng"]];
-    [salikwebview loadRequest:urlrequest];
     [super viewDidLoad];
+    
+    NSURL *url =[NSURL URLWithString:@"https://customers.salik.ae/default.aspx?ReturnUrl=%2fModuleCustomer%2fMakePayment.aspx%3fculture%3deng&culture=eng"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [salikwebview loadRequest:request];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -38,6 +41,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+/******************************************/
+#pragma mark - WebView Delegate
+/******************************************/
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+    NSLog(@"finish");
+}
+
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    NSLog(@"Error for WEBVIEW: %@", [error description]);
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Alert" message:@"An error has been occured.Kindly try agine or later." preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 
