@@ -41,6 +41,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UIStatusBarTintParameters</key>
 	<dict>
 		<key>UINavigationBar</key>
@@ -52,9 +54,9 @@
 				<key>Blue</key>
 				<real>1</real>
 				<key>Green</key>
-				<real>0.80000001192092896</real>
+				<real>0.800000011920929</real>
 				<key>Red</key>
-				<real>0.40000000596046448</real>
+				<real>0.4000000059604645</real>
 			</dict>
 			<key>Translucent</key>
 			<false/>
