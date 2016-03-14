@@ -71,7 +71,7 @@
                                 </connections>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Rrw-Ja-Nk7" secondAttribute="bottom" id="6qi-a2-jGN"/>
                             <constraint firstItem="0iL-Ee-oSt" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" id="ECP-jZ-OP9"/>
