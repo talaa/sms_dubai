@@ -8,17 +8,26 @@
 
 import UIKit
 import NotificationCenter
+import WebKit
 
-class TodayViewController: UIViewController, NCWidgetProviding {
-    @IBOutlet weak var trafficwidgetview: UIWebView!
+class TodayViewController: UIViewController, NCWidgetProviding, WKNavigationDelegate {
+    
+    @IBOutlet var containerView : UIView! = nil
+    var trafficwidgetview: WKWebView?
     var content:String!
-        
+    
+    override func loadView() {
+        super.loadView()
+        self.trafficwidgetview = WKWebView()
+        self.view = self.trafficwidgetview
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
         //NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"googlemaps" ofType:@"html"];
         
-        
+//        
         let bundle = NSBundle.mainBundle()
         let pathhtml = bundle.pathForResource("trafficmap", ofType: "html")
         print(pathhtml)
@@ -30,13 +39,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         
         //let content = String.stringWithContentsOfFile(pathhtml!,encoding: NSUTF8StringEncoding, error: nil)
-        trafficwidgetview.layer.cornerRadius=50.0
-        trafficwidgetview.clipsToBounds=true
+//        trafficwidgetview.layer.cornerRadius=50.0
+//        trafficwidgetview.clipsToBounds=true
 
         //let htmlfile = bundle.pathForResource("googlemaps", ofType: "hmtl")
         //let htmlString = String .stringWithContentsOfFile(htmlfile, encoding: NSUTF8StringEncoding, error: nil);
         //NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
-        trafficwidgetview .loadHTMLString(content, baseURL: nil);
+        
+        
+        trafficwidgetview!.loadHTMLString(content, baseURL: nil);
+        
         //[trafficwidgetview loadHTMLString:htmlString baseURL:nil];
     }
     
