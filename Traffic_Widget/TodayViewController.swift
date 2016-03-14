@@ -17,6 +17,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
         //NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"googlemaps" ofType:@"html"];
+        
+        
         let bundle = NSBundle.mainBundle()
         let pathhtml = bundle.pathForResource("trafficmap", ofType: "html")
         print(pathhtml)
